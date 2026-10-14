@@ -1,0 +1,8 @@
+{ "lesson": 9, "newSoundIds": ["o"],
+  "tasks": [
+    { "type": "newSound", "soundId": "o", "script": ["Point to the sound.", "This sound is ooo. Say it with me: ooo.", "Your turn. What sound? Good."] },
+    { "type": "soundReview", "soundIds": ["e_long", "d", "m", "n", "i", "t", "a", "s", "p"], "script": ["Point to each sound and ask: What sound?"] },
+    { "type": "blend", "wordIds": ["on", "top"], "script": ["Say it slowly with me... now say it fast!"] },
+    { "type": "wordRead", "wordIds": ["on", "not", "top", "pot", "dot", "mop", "mom"], "script": ["Have the child sound out each word, then read it fast."] },
+    { "type": "sentenceRead", "text": [["mom", "sat", "on", "top"]], "script": ["Child sounds out each word, then reads the whole sentence the fast way.", "Ask: Where did mom sit?"] }
+  ] }

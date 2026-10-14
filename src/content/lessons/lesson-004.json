@@ -1,0 +1,7 @@
+{ "lesson": 4, "newSoundIds": ["i"],
+  "tasks": [
+    { "type": "newSound", "soundId": "i", "script": ["Point to the sound.", "This sound is iii. Say it with me: iii.", "Your turn. What sound? Good."] },
+    { "type": "soundReview", "soundIds": ["a", "t", "p", "s"], "script": ["Point to each sound and ask: What sound?"] },
+    { "type": "blend", "wordIds": ["it", "sit"], "script": ["Say it slowly with me... now say it fast!"] },
+    { "type": "wordRead", "wordIds": ["sit", "tip", "sip", "pit", "pat"], "script": ["Have the child sound out each word, then read it fast."] }
+  ] }

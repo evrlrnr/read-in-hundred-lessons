@@ -1,0 +1,78 @@
+* { box-sizing: border-box; margin: 0; }
+:root {
+  --ink: #1f2430; --paper: #fdfbf7; --accent: #2f6fed; --strip: #eef1f6;
+}
+body { font-family: system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+#root { min-height: 100dvh; display: flex; flex-direction: column; }
+
+button { font: inherit; cursor: pointer; }
+.nav-btn {
+  padding: 0.9rem 1.4rem; border-radius: 12px; border: 2px solid var(--ink);
+  background: white; font-size: 1.1rem; min-width: 7rem;
+}
+.nav-btn.primary { background: var(--accent); border-color: var(--accent); color: white; }
+.nav-btn:disabled { opacity: 0.35; cursor: default; }
+.link-btn { border: none; background: none; color: var(--accent); font-size: 1rem; }
+
+/* Home */
+.home { padding: 1.5rem 1rem; max-width: 30rem; margin: 0 auto; }
+.subtitle { color: #555; margin: 0.5rem 0 1.25rem; }
+.lesson-list { list-style: none; padding: 0; display: grid; gap: 0.6rem; }
+.lesson-btn {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  padding: 0.9rem 1rem; border-radius: 12px; border: 1.5px solid #ccc; background: white;
+  font-size: 1.05rem;
+}
+.lesson-btn span { color: #666; }
+
+/* Player */
+.player { display: flex; flex-direction: column; flex: 1; min-height: 100dvh; }
+.player-header {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+  padding: 0.6rem 0.8rem; font-size: 0.9rem; color: #444;
+}
+.dots { display: flex; gap: 4px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: #ccc; display: inline-block; }
+.dot.active { background: var(--accent); }
+
+.adult-strip {
+  background: var(--strip); border-block: 1px solid #dde; padding: 0.7rem 1rem;
+  font-size: 0.95rem; color: #333;
+}
+.adult-strip p { margin: 0.2rem 0; }
+.adult-strip::before { content: "You say:"; font-weight: 700; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.05em; color: #777; display: block; }
+
+.child-area {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  gap: 1.5rem; flex-wrap: wrap; padding: 1.5rem 1rem; text-align: center;
+}
+.sound-big { font-size: 7rem; font-weight: 700; }
+.sound-card {
+  font-size: 3rem; font-weight: 700; border: 2px solid #ddd; border-radius: 16px;
+  padding: 0.6rem 1.2rem; background: white; min-width: 5.5rem;
+}
+.sound-grid { align-content: center; }
+.word-list { flex-direction: column; gap: 1.2rem; }
+.word { font-size: 3.2rem; font-weight: 700; letter-spacing: 0.04em; }
+.word .silent { font-size: 0.6em; opacity: 0.55; }
+.word .macron { text-decoration: overline; text-decoration-thickness: 3px; }
+.sentences { flex-direction: column; }
+.sentence { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+.sentence .word { font-size: 2.4rem; }
+.period { font-size: 2.4rem; font-weight: 700; margin-left: -0.8rem; }
+
+.controls {
+  display: flex; justify-content: space-between; gap: 1rem;
+  padding: 0.9rem 1rem calc(0.9rem + env(safe-area-inset-bottom));
+  border-top: 1px solid #e5e5e5; background: white; position: sticky; bottom: 0;
+}
+.controls .primary { flex: 1; }
+
+/* Complete */
+.complete {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 1rem; padding: 2rem 1rem; text-align: center;
+}
+.complete h1 { font-size: 2rem; }
+.all-done { font-size: 1.2rem; }

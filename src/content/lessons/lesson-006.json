@@ -1,0 +1,8 @@
+{ "lesson": 6, "newSoundIds": ["m"],
+  "tasks": [
+    { "type": "newSound", "soundId": "m", "script": ["Point to the sound.", "This sound is mmm. Say it with me: mmm.", "Your turn. What sound? Good."] },
+    { "type": "soundReview", "soundIds": ["n", "i", "p", "t", "a", "s"], "script": ["Point to each sound and ask: What sound?"] },
+    { "type": "blend", "wordIds": ["am", "mat"], "script": ["Say it slowly with me... now say it fast!"] },
+    { "type": "wordRead", "wordIds": ["mat", "man", "map", "sam", "pin", "ant"], "script": ["Have the child sound out each word, then read it fast."] },
+    { "type": "sentenceRead", "text": [["sam", "sat"]], "script": ["Child sounds out each word, then reads the whole sentence the fast way.", "Ask: Who sat? Good remembering!"] }
+  ] }

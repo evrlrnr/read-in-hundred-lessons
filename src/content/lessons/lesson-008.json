@@ -1,0 +1,8 @@
+{ "lesson": 8, "newSoundIds": ["e_long"],
+  "tasks": [
+    { "type": "newSound", "soundId": "e_long", "script": ["Point to the sound.", "This sound is eee. The line on top means it says its name.", "Say it with me: eee. Your turn. Good."] },
+    { "type": "soundReview", "soundIds": ["d", "m", "n", "i", "p", "a", "s", "t"], "script": ["Point to each sound and ask: What sound?"] },
+    { "type": "blend", "wordIds": ["me", "eat"], "script": ["Say it slowly with me... now say it fast!", "The small letter is quiet — we do not say it."] },
+    { "type": "wordRead", "wordIds": ["me", "eat", "sad", "man"], "script": ["Have the child sound out each word, then read it fast."] },
+    { "type": "sentenceRead", "text": [["sam", "and", "dad", "eat"]], "script": ["Child sounds out each word, then reads the whole sentence the fast way.", "Ask: What are they doing?"] }
+  ] }
