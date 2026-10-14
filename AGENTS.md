@@ -6,14 +6,16 @@ A web app that gives parents/teachers a scripted, sequenced phonics lesson exper
 is in **TECHNICAL_PLAN.md — read it before writing any code. It is the source of
 truth.** Past decisions and lessons learned are in **loop-knowledge.md**.
 
-## Current status (2026-07-07)
+## Current status (2026-10-14)
 - **M1 done**: content schemas, decodability validator, 10 original lessons authored
 - **M2 done**: lesson player — all 10 lessons verified end to end on a mobile viewport
-- **Next: M3** (orthography component + /dev/ortho visual test page)
+- **M3 done**: `<DecodableWord>` orthography component (team arcs, drawn macron bar,
+  silent letters, per-sound-unit blending guide) + `/dev/ortho` visual test page
+- **Next: M4** (progress: profiles, flags, export/import)
 - Schema note: lessons use `newSoundIds` (an ARRAY — lesson 1 introduces two sounds),
   matching src/types/content.ts and the validator. Do not "fix" it to singular.
-- Word rendering in LessonPlayer.tsx (`WordText`) is a deliberate M2 placeholder
-  that M3 replaces.
+- Validator now also emits **non-fatal warnings** for planned-but-unauthored sounds
+  and reserve words (see `validateWarnings` in scripts/validate.mjs).
 
 ## Commands
 - `npm run dev` — dev server (port 5173) · `npm run build` — production build
@@ -23,8 +25,9 @@ truth.** Past decisions and lessons learned are in **loop-knowledge.md**.
 ## Where things live
 - Content: `src/content/` (sounds.json, words.json, lessons/lesson-NNN.json)
 - Validator: `scripts/validate.mjs` · Tests: `test/`
-- UI: `src/App.tsx`, `src/components/LessonPlayer.tsx`, `src/styles.css`
-- Planning artifacts: TECHNICAL_PLAN.md, loop-knowledge.md, drafts/ (historical)
+- UI: `src/App.tsx`, `src/components/LessonPlayer.tsx`, `src/components/DecodableWord.tsx`,
+  `src/components/OrthoTestPage.tsx`, `src/styles.css`
+- Planning artifacts: TECHNICAL_PLAN.md, loop-knowledge.md, TASKS.md, drafts/ (historical)
 
 ## Hard constraints (never violate)
 1. **Original content only.** We implement the teaching *method* of programs like

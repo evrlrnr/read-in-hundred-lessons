@@ -57,3 +57,54 @@ a planning pass.
 Score 1–10 on: lessons playable end-to-end · orthography renders all grapheme
 types · validator catches seeded errors · progress survives reload + export/import
 round-trip. Boundary: pause for user before M6 deploy.
+
+## Run 4 — Build loop, M3 Orthography (2026-10-14) · Done-check PASSED
+
+### What shipped
+- `src/components/DecodableWord.tsx`: span-per-grapheme with (a) SVG arc beneath
+  letter teams, (b) drawn macron bar via `::after`, (c) small/faded silent letters,
+  (d) sounding-out guide = horizontal arrow + one dot per **sound unit** (non-silent
+  grapheme group), dot x-positions measured from rendered span layout via
+  `useLayoutEffect` + refs.
+- `src/components/OrthoTestPage.tsx` at `/dev/ortho` (also `#/dev/ortho`): renders
+  every word in the bank, isolates each feature type, and shows the blend guide.
+- `LessonPlayer.tsx`: `WordText` placeholder replaced by a `Word` wrapper over
+  `DecodableWord`; blend tasks pass `showGuide`.
+- Content: added `sh` (team, lesson 17 per plan §2) to `sounds.json` and `ship` to
+  `words.json` as the arc test case.
+- Validator: new non-fatal `validateWarnings` — flags planned-but-unauthored sounds
+  and reserve words. `validateContent` (errors) unchanged, so `assert.deepEqual(errors, [])`
+  still holds. 6/6 tests pass.
+
+### Decisions changed during build (recorded per AGENTS.md)
+1. **Macron = drawn `::after` bar, not `text-decoration: overline`.** TECHNICAL_PLAN §4
+   ("CSS `::after` bar") and codex-kickoff-prompt ("a drawn macron bar, not CSS overline")
+   were in mild conflict. Both are satisfied by a positioned `::after` bar; the thing we
+   reject is `text-decoration: overline` (what the M2 placeholder used).
+2. **Validator coverage gap → warnings, not errors.** A hard "every sound needs an
+   introducing lesson" check would break incremental authoring (we have 10 of 100
+   lessons). Instead: non-fatal warnings surface planned sounds (sh → lesson 17) and
+   reserve words (ship). Errors are reserved for actual decodability violations.
+3. **Font: keeping the system stack for M3** (deviation from §4's "Andika or Comic
+   Neue"). The orthography is drawn with SVG/CSS so it is font-agnostic; a bundled
+   open-licensed font is deferred to M6 to avoid a network/asset dependency and keep
+   the offline story clean. Revisit at M6.
+
+### What worked / what didn't
+- **SSR smoke test via esbuild + `renderToString`** confirmed the component emits the
+  right structure for every grapheme type (team arc present, macron/silent classes
+  correct) without needing a browser. Guide dots are client-only (layout), so they're
+  the one part still verified by eye. Build as CJS, not ESM — ESM bundling of
+  `react-dom/server` trips a `Dynamic require of "stream"` error.
+- **The one thing I could NOT verify headlessly is the pixels**: arc curvature, the
+  macron bar's vertical position (font-dependent — I set `top: 0.06em`, likely needs a
+  1-line nudge), and dot-to-letter alignment. `npm run dev` → open `/dev/ortho` and
+  check: arc sits under the team, macron bar is level with the top of the vowel,
+  guide dots center under each sound unit.
+
+### Evidence
+- `npm run validate`: PASS 10 lessons, 42 words, 11 sounds + 2 expected warnings
+- `npm test`: 6/6 · `npx tsc --noEmit`: clean · `npm run build`: clean (50 kB gzip)
+- `/dev/ortho` serves the SPA shell (200)
+
+Next: M4 (Progress) per plan §7.

@@ -1,14 +1,24 @@
 import { useState } from 'react';
 import { lessons, soundById } from './content';
 import { LessonPlayer } from './components/LessonPlayer';
+import { OrthoTestPage } from './components/OrthoTestPage';
 
 type Screen =
   | { view: 'home' }
   | { view: 'lesson'; n: number }
   | { view: 'complete'; n: number };
 
+// Dev-only visual test page for the orthography component.
+const isDevOrtho =
+  typeof window !== 'undefined' &&
+  (window.location.pathname.endsWith('/dev/ortho') || window.location.hash === '#/dev/ortho');
+
 export function App() {
   const [screen, setScreen] = useState<Screen>({ view: 'home' });
+
+  if (isDevOrtho) {
+    return <OrthoTestPage />;
+  }
 
   if (screen.view === 'lesson') {
     const lesson = lessons.find((l) => l.lesson === screen.n)!;

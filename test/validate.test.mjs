@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
-import { validateContent, loadContent } from '../scripts/validate.mjs';
+import { validateContent, validateWarnings, loadContent } from '../scripts/validate.mjs';
 
 const contentDir = join(dirname(fileURLToPath(import.meta.url)), '..', 'src', 'content');
 const { sounds, words, lessons } = loadContent(contentDir);
@@ -36,4 +36,26 @@ test('broken lesson: missing soundReview task is rejected', () => {
   };
   const errors = validateContent(sounds, words, [broken]);
   assert.ok(errors.some((e) => e.includes('no soundReview')));
+});
+
+test('warning: sound planned beyond the highest authored lesson is flagged', () => {
+  // "sh" is planned for lesson 17, but only 10 lessons are authored.
+  const warnings = validateWarnings(sounds, words, lessons);
+  assert.ok(
+    warnings.some((w) => w.includes('sh') && w.includes('lesson 17')),
+    'expected a warning for the planned-but-unauthored sound "sh"'
+  );
+});
+
+test('warning: reserve word not used by any lesson is flagged', () => {
+  // "ship" is in the bank but no lesson references it.
+  const warnings = validateWarnings(sounds, words, lessons);
+  assert.ok(
+    warnings.some((w) => w.includes('ship') && w.includes('reserve word')),
+    'expected a warning for the reserve word "ship"'
+  );
+});
+
+test('warnings do not fail validation: real content still has zero errors', () => {
+  assert.deepEqual(validateContent(sounds, words, lessons), []);
 });

@@ -50,6 +50,38 @@ export function validateContent(sounds, words, lessons) {
   return errors;
 }
 
+// Non-fatal warnings. These surface content that is *incomplete* rather than
+// *wrong* — safe to ignore during incremental authoring, worth seeing before ship.
+//  - a sound whose introducedInLesson is beyond the highest authored lesson
+//  - a word in the bank that no lesson references (a "reserve" word)
+export function validateWarnings(sounds, words, lessons) {
+  const warnings = [];
+  const maxLesson = lessons.length ? Math.max(...lessons.map((l) => l.lesson)) : 0;
+
+  const usedWords = new Set();
+  for (const lesson of lessons) {
+    for (const task of lesson.tasks) {
+      if (task.wordIds) for (const id of task.wordIds) usedWords.add(id);
+      if (task.text) for (const sentence of task.text) for (const id of sentence) usedWords.add(id);
+    }
+  }
+
+  for (const s of sounds) {
+    if (s.introducedInLesson > maxLesson) {
+      warnings.push(
+        `sound "${s.id}" is planned for lesson ${s.introducedInLesson}, ` +
+        `which is not authored yet (highest lesson: ${maxLesson})`
+      );
+    }
+  }
+  for (const w of words) {
+    if (!usedWords.has(w.id)) {
+      warnings.push(`word "${w.id}" is not used by any lesson (reserve word)`);
+    }
+  }
+  return warnings;
+}
+
 export function loadContent(contentDir) {
   const read = (p) => JSON.parse(readFileSync(p, 'utf8'));
   const sounds = read(join(contentDir, 'sounds.json'));
@@ -67,7 +99,12 @@ if (isMain) {
   const { sounds, words, lessons } = loadContent(contentDir);
   const errors = validateContent(sounds, words, lessons);
   if (errors.length === 0) {
+    const warnings = validateWarnings(sounds, words, lessons);
     console.log(`PASS: ${lessons.length} lessons, ${words.length} words, ${sounds.length} sounds — all decodable.`);
+    if (warnings.length > 0) {
+      console.log(`  ${warnings.length} warning(s):`);
+      for (const w of warnings) console.log('  ! ' + w);
+    }
   } else {
     console.error(`FAIL: ${errors.length} error(s)`);
     for (const e of errors) console.error('  - ' + e);

@@ -27,5 +27,5 @@ npx tsc --noEmit   # typecheck
 - [codex-kickoff-prompt.md](codex-kickoff-prompt.md) — per-milestone prompts for handoff
 - [loop-knowledge.md](loop-knowledge.md) — decisions and lessons learned per milestone
 
-Status: milestones M1 (content pipeline) and M2 (lesson player) complete; next is
-M3 (orthography rendering).
+Status: milestones M1 (content pipeline), M2 (lesson player), and M3 (orthography)
+complete; next is M4 (progress).

@@ -1,21 +1,14 @@
 import { useState } from 'react';
 import type { Lesson, LessonTask } from '../types/content';
 import { soundById, wordById } from '../content';
+import { DecodableWord } from './DecodableWord';
 
-// Basic word rendering for M2. M3 replaces this with the full
-// orthography component (SVG team arcs, blending arrows).
-export function WordText({ id }: { id: string }) {
+// Thin wrapper: resolves a word id to its graphemes and renders the full
+// orthography component. `showGuide` adds the sounding-out arrow (blend tasks).
+function Word({ id, showGuide = false }: { id: string; showGuide?: boolean }) {
   const word = wordById.get(id);
   if (!word) return <span>{id}</span>;
-  return (
-    <span className="word">
-      {word.graphemes.map((g, i) => (
-        <span key={i} className={`${g.silent ? 'silent' : ''} ${g.macron ? 'macron' : ''}`}>
-          {g.g}
-        </span>
-      ))}
-    </span>
-  );
+  return <DecodableWord word={word} showGuide={showGuide} />;
 }
 
 function SoundCard({ soundId, big }: { soundId: string; big?: boolean }) {
@@ -42,10 +35,15 @@ function TaskView({ task }: { task: LessonTask }) {
         </div>
       );
     case 'blend':
+      return (
+        <div className="child-area word-list">
+          {task.wordIds.map((id) => <Word key={id} id={id} showGuide />)}
+        </div>
+      );
     case 'wordRead':
       return (
         <div className="child-area word-list">
-          {task.wordIds.map((id) => <WordText key={id} id={id} />)}
+          {task.wordIds.map((id) => <Word key={id} id={id} />)}
         </div>
       );
     case 'sentenceRead':
@@ -53,7 +51,7 @@ function TaskView({ task }: { task: LessonTask }) {
         <div className="child-area sentences">
           {task.text.map((sentence, i) => (
             <p key={i} className="sentence">
-              {sentence.map((wordId, j) => <WordText key={j} id={wordId} />)}
+              {sentence.map((wordId, j) => <Word key={j} id={wordId} />)}
               <span className="period">.</span>
             </p>
           ))}

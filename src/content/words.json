@@ -39,5 +39,6 @@
   { "id": "mop", "graphemes": [ { "g": "m", "soundId": "m" }, { "g": "o", "soundId": "o" }, { "g": "p", "soundId": "p" } ] },
   { "id": "mom", "graphemes": [ { "g": "m", "soundId": "m" }, { "g": "o", "soundId": "o" }, { "g": "m", "soundId": "m" } ] },
   { "id": "stop", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "t", "soundId": "t" }, { "g": "o", "soundId": "o" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "pond", "graphemes": [ { "g": "p", "soundId": "p" }, { "g": "o", "soundId": "o" }, { "g": "n", "soundId": "n" }, { "g": "d", "soundId": "d" } ] }
+  { "id": "pond", "graphemes": [ { "g": "p", "soundId": "p" }, { "g": "o", "soundId": "o" }, { "g": "n", "soundId": "n" }, { "g": "d", "soundId": "d" } ] },
+  { "id": "ship", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "sh", "soundId": "sh", "team": true }, { "g": "i", "soundId": "i" }, { "g": "p", "soundId": "p" } ] }
 ]

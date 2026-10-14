@@ -8,5 +8,6 @@
   { "id": "m", "display": "m", "hint": "as in mat", "introducedInLesson": 6, "sayItScript": "This sound is mmm. Say it with me: mmm." },
   { "id": "d", "display": "d", "hint": "as in dot", "introducedInLesson": 7, "sayItScript": "This sound is d. Say it with me: d." },
   { "id": "e_long", "display": "ē", "macron": true, "hint": "long e, as in me", "introducedInLesson": 8, "sayItScript": "This sound is eee. The line on top means it says its name. Say it with me: eee." },
-  { "id": "o", "display": "o", "hint": "short o, as in on", "introducedInLesson": 9, "sayItScript": "This sound is ooo. Say it with me: ooo." }
+  { "id": "o", "display": "o", "hint": "short o, as in on", "introducedInLesson": 9, "sayItScript": "This sound is ooo. Say it with me: ooo." },
+  { "id": "sh", "display": "sh", "team": true, "hint": "as in ship", "introducedInLesson": 17, "sayItScript": "This sound is shhh. Say it with me: shhh." }
 ]
