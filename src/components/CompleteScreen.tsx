@@ -23,7 +23,7 @@ export function CompleteScreen({
   const shouldRepeat = flaggedCount >= 2;
 
   return (
-    <div className="complete">
+    <main className="complete">
       <h1>🎉 Lesson {lessonN} done!</h1>
       <p>Great reading today, {profileName}. Give a high five!</p>
 
@@ -48,6 +48,6 @@ export function CompleteScreen({
       <button className="nav-btn" onClick={onBack}>
         Back to {profileName}
       </button>
-    </div>
+    </main>
   );
 }

@@ -30,7 +30,7 @@ export function Dashboard({
   const flaggedCount = profile.flags.sounds.length + profile.flags.words.length;
 
   return (
-    <div className="dashboard">
+    <main className="dashboard">
       <header className="dash-header">
         <button className="link-btn" onClick={onBack}>
           ← All children
@@ -84,6 +84,6 @@ export function Dashboard({
         <h2>Sound mastery</h2>
         <MasteryGrid profile={profile} sounds={sounds} />
       </section>
-    </div>
+    </main>
   );
 }

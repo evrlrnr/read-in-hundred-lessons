@@ -202,15 +202,16 @@ export function LessonPlayer({
   };
 
   return (
-    <div className="player">
+    <main className="player">
+      <span className="print-header">Lesson {lesson.lesson} — Reading Passage</span>
       <header className="player-header">
         <button className="link-btn" onClick={onExit}>
           ← Exit
         </button>
-        <span>
+        <h1 className="player-title">
           Lesson {lesson.lesson} · {TASK_LABELS[task.type]}
-        </span>
-        <span className="dots">
+        </h1>
+        <span className="dots" aria-hidden="true">
           {lesson.tasks.map((_, i) => (
             <span key={i} className={i === taskIndex ? 'dot active' : 'dot'} />
           ))}
@@ -236,6 +237,6 @@ export function LessonPlayer({
           {isLast ? 'Finish lesson' : 'Next'}
         </button>
       </footer>
-    </div>
+    </main>
   );
 }

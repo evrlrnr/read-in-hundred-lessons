@@ -46,7 +46,7 @@ export function ProfileHome({
   };
 
   return (
-    <div className="home">
+    <main className="home">
       <h1>Reading Lessons</h1>
       <p className="subtitle">Pick a child to continue, or add a new one.</p>
 
@@ -103,6 +103,6 @@ export function ProfileHome({
           Add child
         </button>
       </div>
-    </div>
+    </main>
   );
 }

@@ -25,13 +25,13 @@ const isDevOrtho =
 
 function Missing({ onHome }: { onHome: () => void }) {
   return (
-    <div className="complete">
+    <main className="complete">
       <h1>Oops</h1>
       <p>That page isn't available.</p>
       <button className="nav-btn" onClick={onHome}>
         Back to home
       </button>
-    </div>
+    </main>
   );
 }
 

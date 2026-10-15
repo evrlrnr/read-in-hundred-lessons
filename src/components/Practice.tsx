@@ -68,7 +68,7 @@ export function Practice({
 
   if (deck.length === 0) {
     return (
-      <div className="practice">
+      <main className="practice">
         <header className="dash-header">
           <button className="link-btn" onClick={onBack}>← Back</button>
           <h1>Practice</h1>
@@ -78,13 +78,13 @@ export function Practice({
           <p className="practice-empty-sub">Complete more lessons or flag items to build a deck.</p>
           <button className="nav-btn" onClick={onBack}>Back</button>
         </div>
-      </div>
+      </main>
     );
   }
 
   if (done) {
     return (
-      <div className="practice">
+      <main className="practice">
         <header className="dash-header">
           <button className="link-btn" onClick={onBack}>← Back</button>
           <h1>Practice</h1>
@@ -97,7 +97,7 @@ export function Practice({
           <button className="nav-btn primary" onClick={restart}>Practice again</button>
           <button className="nav-btn" onClick={onBack}>Back</button>
         </div>
-      </div>
+      </main>
     );
   }
 
@@ -115,7 +115,7 @@ export function Practice({
   }
 
   return (
-    <div className="practice">
+    <main className="practice">
       <header className="dash-header">
         <button className="link-btn" onClick={onBack}>← Back</button>
         <h1>Practice</h1>
@@ -130,12 +130,12 @@ export function Practice({
         onClick={() => setFlipped((f) => !f)}
         aria-label={flipped ? 'Card showing hint' : 'Card showing front, tap to flip'}
       >
-        <div className="practice-card-front">
+        <span className="practice-card-front">
           {cardContent}
-        </div>
-        <div className="practice-card-back">
+        </span>
+        <span className="practice-card-back">
           <span className="practice-hint">{cardHint}</span>
-        </div>
+        </span>
       </button>
 
       <div className="practice-controls">
@@ -146,6 +146,6 @@ export function Practice({
           Got it
         </button>
       </div>
-    </div>
+    </main>
   );
 }

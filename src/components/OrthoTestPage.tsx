@@ -13,7 +13,7 @@ export function OrthoTestPage() {
   const withTeam = words.find((w) => w.graphemes.some((g) => g.team));
 
   return (
-    <div className="ortho-test">
+    <main className="ortho-test">
       <h1>Orthography test</h1>
       <p className="subtitle">Every grapheme type in the word bank, plus the blending guide.</p>
 
@@ -64,6 +64,6 @@ export function OrthoTestPage() {
           ))}
         </div>
       </section>
-    </div>
+    </main>
   );
 }

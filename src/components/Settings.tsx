@@ -66,7 +66,7 @@ export function Settings({
   };
 
   return (
-    <div className="settings">
+    <main className="settings">
       <header className="dash-header">
         <button className="link-btn" onClick={onBack}>
           ← Back
@@ -116,6 +116,6 @@ export function Settings({
       </section>
 
       {status && <p className="settings-status" role="status">{status}</p>}
-    </div>
+    </main>
   );
 }
