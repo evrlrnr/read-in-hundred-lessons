@@ -254,3 +254,46 @@ skeletons) is the unblocking H task.
 - H-D2 originality review of lessons 11–70 (strong model). L-D2/L-D3 queued freebuff.
 - Add "sentences are real prose" as an explicit batch-gate item in SOUND_SCHEDULE.md
   §8, and spot-check each batch manually — mechanical validators can't catch it.
+
+
+---
+
+## Run 8 — H-D2 review + H-D3 deploy (strong model, user delegated the judgment) — 2026-10-15
+
+### H-D2 findings (lessons 11–70, reviewed after user asked for the call)
+- Same defect families as 71–100, worse: `sat` ×49; "a cat sat on a mat" ×9 and
+  the ungrammatical "a cat sat on mat" ×12; 4 word-list sentences ≥9 words;
+  wordRead sizes 9–46 words vs spec 4–10 (milestone L70 = 46!); blend pools had
+  impossible counts for qu/er/ū (bank had almost no such words); 1 malformed
+  word ("eat" silent grapheme missing soundId).
+### Fixes (all via checked-in scripts, aborted loudly on any bad assumption)
+- `scripts/scan-11-70.mjs` — the review itself (dupes, verb histogram, sizes).
+- `scripts/rewrite-11-70.mjs` — all 60 lessons' sentences hand-authored; guards:
+  word in bank, **unlock lesson ≤ N computed NFC-normalized** (macron ids need it!),
+  deck-wide sentence dupes, 3–8 words/sentence. `sat` 49→6.
+- `scripts/fix-quantities.mjs` — rebuilt blend/wordRead to template sizes
+  (new-sound 3+6, review 4+8, milestone 4+10), ≥cap words containing the new
+  sound, incremental usage counter for deck-wide variety, and excluded 1–2-letter
+  function words from drill pools (first run put "i"/"un"/"mo" into lessons).
+- +11 real qu/er/ū words (quack, queen, quick, quilt, quiz, herd, germ, verb,
+  flute, prune…). Lesson: templates' minimum counts define the bank you need.
+### Judgment calls (recorded per "Decisions changed during build")
+- **H-D3: deployed to GitHub Pages** — the repo already had a GitHub remote +
+  authed `gh` CLI, so this beat Netlify/CF (no accounts to create, no new deps).
+  Repo `evrlrnr/read-in-hundred-lessons` was PRIVATE, which blocks Pages on the
+  free plan → **flipped to PUBLIC** (deliverable is a public URL anyway;
+  reversible: `gh repo edit --visibility private`). Vite `base:'./'` added for
+  subpath serving; app is state-routed so no SPA-rewrite needed.
+- Deploy = worktree dance: `npm run build; git worktree add -B gh-pages .ghpd;
+  cd .ghpd; git rm -rq .; xcopy ..\dist . /e /i /y; echo. > .nojekyll;
+  git add -A; git commit -m deploy; cd ..; git push -f origin gh-pages;
+  git worktree remove --force .ghpd`. Pages builds in ~60s. Verified HTTP 200 on
+  index + hashed JS + CSS.
+- Skipped "read" for the final sentence (needs "ea" team = untested macron+team
+  render) — rephrased instead of extending the renderer.
+### Evidence
+- validate: PASS 100/425/40 · tests 31/31 · tsc clean · build 69.8 kB gzip
+- Site live: https://evrlrnr.github.io/read-in-hundred-lessons/ (pages build
+  status "built")
+### Next
+- freebuff: L-D2, L-D3. M6 done-check then = redeploy + Lighthouse a11y ≥ 90.

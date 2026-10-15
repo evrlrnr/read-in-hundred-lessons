@@ -7,9 +7,14 @@
   nonsense words were removed from the bank, JSON script-shape bugs fixed, and the
   fluency lessons 71–100 were rewritten with real sentences (see
   `scripts/fix-fluency.mjs` for the exact sentences + high-frequency word additions).
+- **H-D2 + H-D3 are DONE** (2026-10-15): lessons 11–70 sentences and
+  blend/wordRead quantities were fully rewritten/fixed by the strong model;
+  app is deployed at https://evrlrnr.github.io/read-in-hundred-lessons/.
 - **Start with Task 2 (print stylesheet). Then Task 3 (accessibility).**
   Do NOT re-author lesson content; if you touch `words.json` or lesson JSON,
-  re-run all four verification commands.
+  re-run all four verification commands. After UI tasks, redeploy:
+  `npm run build` then push `dist/` to the `gh-pages` branch (recipe in
+  AGENTS.md / loop-knowledge Run 8).
 - Do NOT reuse the old fluency pattern of "sentences" that are just word lists —
   every `sentenceRead.text` entry must be a real sentence.
 

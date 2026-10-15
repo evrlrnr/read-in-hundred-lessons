@@ -22,11 +22,21 @@ truth.** Past decisions and lessons learned are in **loop-knowledge.md**.
     (`scripts/fix-fluency.mjs`) + added 69 decodable high-frequency words to the
     bank (he/she/we/dog/frog/like/came/…). Current state: validator PASS
     (100 lessons, 414 words, 40 sounds), 31/31 tests, tsc clean, build clean.
+  - **H-D2 done** (strong model review): found systemic defects in 11–70 —
+    word-list "sentences", `sat` used 49×, one sentence duplicated 9–12×,
+    blend/wordRead counts up to 46 vs spec 4–10. All rewritten
+    (`scripts/rewrite-11-70.mjs`, `scripts/fix-quantities.mjs`); +11 qu/er/ū
+    words; deck-wide dup check; validator PASS 100/L425 words. Originality:
+    sound order + sentences are ours; no book text copied.
+  - **H-D3 done** (judgment call, 2026-10-15): deployed to **GitHub Pages**
+    → https://evrlrnr.github.io/read-in-hundred-lessons/ (gh-pages branch,
+    built from `dist/`). Repo was flipped PRIVATE→PUBLIC to enable it (free
+    plan) — reversible with one `gh repo edit` command. Vite `base:'./'` set
+    for subpath serving. Redeploy recipe in handoff.md.
   - **Queued for freebuff** (see `handoff.md`): L-D2 (print stylesheet),
     L-D3 (accessibility pass) — freebuff must NOT re-author lesson content.
-  - **Remaining for strong model / user**: H-D2 (originality review of lessons
-    11–70 — the 71–100 pass is done since strong model rewrote them),
-    H-D3 (deploy target + sign-off)
+    M6 done-check now needs only: freebuff L-D2/L-D3 + Lighthouse a11y ≥ 90
+    + redeploy.
 - Schema note: lessons use `newSoundIds` (an ARRAY — lesson 1 introduces two sounds),
   matching src/types/content.ts and the validator. Do not "fix" it to singular.
 - Validator now also emits **non-fatal warnings** for planned-but-unauthored sounds
