@@ -1,6 +1,0 @@
-# Normalize line endings so the repo diffs cleanly across OSes.
-* text=auto eol=lf
-
-# Keep Windows scripts executable-friendly
-*.cmd text eol=crlf
-*.bat text eol=crlf
