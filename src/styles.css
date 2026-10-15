@@ -1,6 +1,7 @@
 * { box-sizing: border-box; margin: 0; }
 :root {
   --ink: #1f2430; --paper: #fdfbf7; --accent: #2f6fed; --strip: #eef1f6;
+  --flag: #d9480f;
 }
 body { font-family: system-ui, sans-serif; color: var(--ink); background: var(--paper); }
 #root { min-height: 100dvh; display: flex; flex-direction: column; }
@@ -112,3 +113,129 @@ button { font: inherit; cursor: pointer; }
 }
 .complete h1 { font-size: 2rem; }
 .all-done { font-size: 1.2rem; }
+.repeat-note { color: var(--flag); font-size: 1.05rem; }
+
+/* Home: profile picker (M4) */
+.profile-list { list-style: none; padding: 0; display: grid; gap: 0.6rem; }
+.profile-card { border: 1.5px solid #ccc; border-radius: 12px; background: white; overflow: hidden; }
+.profile-main {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  padding: 0.9rem 1rem; border: none; background: none; font-size: 1.1rem; text-align: left;
+}
+.profile-main strong { font-size: 1.2rem; }
+.profile-main span { color: #666; }
+.profile-actions {
+  display: flex; gap: 1rem; padding: 0.5rem 1rem;
+  border-top: 1px solid #eee; background: #fafafa;
+}
+.profile-edit { display: flex; gap: 0.5rem; padding: 0.75rem 1rem; align-items: center; }
+.profile-edit input {
+  flex: 1; min-width: 0; padding: 0.5rem; border: 1.5px solid #ccc;
+  border-radius: 8px; font: inherit;
+}
+.add-profile { display: flex; gap: 0.5rem; margin-top: 1rem; }
+.add-profile input {
+  flex: 1; min-width: 0; padding: 0.7rem; border: 1.5px solid #ccc;
+  border-radius: 12px; font: inherit;
+}
+.link-btn.danger { color: #c0392b; }
+
+/* Dashboard (M4) */
+.dashboard {
+  padding: 1.5rem 1rem; max-width: 30rem; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 1.25rem; flex: 1;
+}
+.dash-header { display: flex; flex-direction: column; gap: 0.25rem; }
+.dash-header h1 { font-size: 1.8rem; }
+.progress-block { display: flex; flex-direction: column; gap: 0.4rem; }
+.progress-label { display: flex; justify-content: space-between; font-size: 0.9rem; color: #555; }
+.progress-bar { height: 12px; background: #e5e5e5; border-radius: 6px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 6px; transition: width 0.3s; }
+.nav-btn.big { width: 100%; font-size: 1.3rem; padding: 1.1rem; }
+.dash-actions { display: flex; gap: 0.75rem; }
+.dash-actions .nav-btn { flex: 1; }
+.flag-note { color: var(--flag); font-size: 0.95rem; }
+
+/* Flag-for-review button (M4) */
+.flag-btn {
+  min-width: 44px; min-height: 44px; border-radius: 10px;
+  border: 2px solid #ccc; background: white; font-size: 1.4rem;
+  color: #aaa; line-height: 1; padding: 0;
+}
+.flag-btn.flagged { border-color: var(--flag); color: var(--flag); background: #fff5f0; }
+
+/* Flagged item wrappers in the player (M4) */
+.word-item, .sound-item { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.word-item.guide { gap: 2.5rem; } /* room for the blending guide arrow */
+.sound-item.big { gap: 0.75rem; }
+
+/* Settings: export / import (M4) */
+.settings {
+  padding: 1.5rem 1rem; max-width: 30rem; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 1.5rem; flex: 1;
+}
+.settings-section { display: flex; flex-direction: column; gap: 0.75rem; }
+.settings-section h2 { font-size: 1.2rem; }
+.settings-help { color: #555; font-size: 0.95rem; }
+.import-choice {
+  display: flex; flex-direction: column; gap: 0.5rem;
+  padding: 0.75rem; background: var(--strip); border-radius: 12px;
+}
+.import-choice p { font-size: 0.95rem; }
+.import-errors { padding: 0.75rem; background: #fdecea; border-radius: 12px; color: #a33; }
+.import-errors ul { margin-left: 1.2rem; font-size: 0.9rem; }
+.settings-status { color: var(--accent); font-weight: 600; }
+
+/* Practice deck (M5) */
+.practice {
+  padding: 1.5rem 1rem; max-width: 30rem; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 1rem; flex: 1;
+}
+.practice-progress { text-align: center; color: #555; font-size: 0.95rem; }
+.practice-card {
+  flex: 1; min-height: 12rem; border: 2px solid #ddd; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; background: #fff; transition: transform 0.15s;
+  padding: 2rem;
+}
+.practice-card:active { transform: scale(0.97); }
+.practice-card-front, .practice-card-back {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem; font-weight: 700;
+}
+.practice-card-back { font-size: 1.5rem; color: #555; font-weight: 400; }
+.practice-sound { font-size: 4rem; }
+.practice-hint { font-size: 1.2rem; }
+.practice-controls {
+  display: flex; gap: 0.75rem;
+}
+.practice-controls .nav-btn { flex: 1; }
+.practice-empty, .practice-done {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 1rem; text-align: center;
+}
+.practice-empty-sub { color: #555; font-size: 0.95rem; }
+.practice-summary { font-size: 1.2rem; font-weight: 600; }
+
+/* Mastery grid (M5) */
+.dash-section { margin-top: 1rem; }
+.dash-section h2 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.mastery { display: flex; flex-direction: column; gap: 0.5rem; }
+.mastery-legend {
+  display: flex; gap: 1rem; font-size: 0.85rem; color: #555;
+}
+.mastery-legend-item.mastered { color: #2e7d32; }
+.mastery-legend-item.learning { color: #f57f17; }
+.mastery-legend-item.new { color: #999; }
+.mastery-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+  gap: 0.5rem;
+}
+.mastery-cell {
+  aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+  border-radius: 8px; font-weight: 700; font-size: 1.1rem;
+}
+.mastery-cell.mastered { background: #e8f5e9; color: #2e7d32; }
+.mastery-cell.learning { background: #fff8e1; color: #f57f17; }
+.mastery-cell.new { background: #f5f5f5; color: #999; }
+.mastery-empty { color: #555; font-size: 0.95rem; }

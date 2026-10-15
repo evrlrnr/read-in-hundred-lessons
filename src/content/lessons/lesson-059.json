@@ -1,0 +1,82 @@
+{
+  "lesson": 59,
+  "newSoundIds": [
+    "oo"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "oo",
+      "script": [
+        "Point to the sound.",
+        "These two letters make one sound: oo. Say it with me: oo.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "oo",
+        "er",
+        "ī",
+        "ch",
+        "x",
+        "qu"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "goop",
+        "foot",
+        "germ"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "hook",
+        "loom",
+        "wood",
+        "herd",
+        "verb",
+        "keg"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "kid",
+          "got",
+          "a",
+          "good",
+          "book"
+        ],
+        [
+          "a",
+          "pup",
+          "ate",
+          "lunch",
+          "at",
+          "noon"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What did the kid get? When did the pup eat lunch?"
+      ]
+    }
+  ]
+}

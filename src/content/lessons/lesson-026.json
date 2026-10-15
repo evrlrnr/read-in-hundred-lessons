@@ -1,0 +1,76 @@
+{
+  "lesson": 26,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "b",
+        "h",
+        "l",
+        "u",
+        "sh",
+        "r"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "belt",
+        "bend",
+        "best",
+        "bad"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "ban",
+        "beg",
+        "bet",
+        "bid",
+        "bot",
+        "bun",
+        "lab",
+        "lob"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "bat",
+          "had",
+          "a",
+          "bed",
+          "in",
+          "a",
+          "bag"
+        ],
+        [
+          "a",
+          "bib",
+          "is",
+          "on",
+          "a",
+          "bin"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where did the bat keep its bed? What is on the bin?"
+      ]
+    }
+  ]
+}

@@ -1,13 +1,298 @@
 [
-  { "id": "s", "display": "s", "hint": "as in sun", "introducedInLesson": 1, "sayItScript": "This sound is sss. Say it with me: sss." },
-  { "id": "a", "display": "a", "hint": "short a, as in ant", "introducedInLesson": 1, "sayItScript": "This sound is aaa. Say it with me: aaa." },
-  { "id": "t", "display": "t", "hint": "as in tap", "introducedInLesson": 2, "sayItScript": "This sound is t. Say it with me: t." },
-  { "id": "p", "display": "p", "hint": "as in pan", "introducedInLesson": 3, "sayItScript": "This sound is p. Say it with me: p." },
-  { "id": "i", "display": "i", "hint": "short i, as in it", "introducedInLesson": 4, "sayItScript": "This sound is iii. Say it with me: iii." },
-  { "id": "n", "display": "n", "hint": "as in nap", "introducedInLesson": 5, "sayItScript": "This sound is nnn. Say it with me: nnn." },
-  { "id": "m", "display": "m", "hint": "as in mat", "introducedInLesson": 6, "sayItScript": "This sound is mmm. Say it with me: mmm." },
-  { "id": "d", "display": "d", "hint": "as in dot", "introducedInLesson": 7, "sayItScript": "This sound is d. Say it with me: d." },
-  { "id": "e_long", "display": "ē", "macron": true, "hint": "long e, as in me", "introducedInLesson": 8, "sayItScript": "This sound is eee. The line on top means it says its name. Say it with me: eee." },
-  { "id": "o", "display": "o", "hint": "short o, as in on", "introducedInLesson": 9, "sayItScript": "This sound is ooo. Say it with me: ooo." },
-  { "id": "sh", "display": "sh", "team": true, "hint": "as in ship", "introducedInLesson": 17, "sayItScript": "This sound is shhh. Say it with me: shhh." }
+  {
+    "id": "s",
+    "display": "s",
+    "hint": "as in sun",
+    "introducedInLesson": 1,
+    "sayItScript": "This sound is sss. Say it with me: sss."
+  },
+  {
+    "id": "a",
+    "display": "a",
+    "hint": "short a, as in ant",
+    "introducedInLesson": 1,
+    "sayItScript": "This sound is aaa. Say it with me: aaa."
+  },
+  {
+    "id": "t",
+    "display": "t",
+    "hint": "as in tap",
+    "introducedInLesson": 2,
+    "sayItScript": "This sound is t. Say it with me: t."
+  },
+  {
+    "id": "p",
+    "display": "p",
+    "hint": "as in pan",
+    "introducedInLesson": 3,
+    "sayItScript": "This sound is p. Say it with me: p."
+  },
+  {
+    "id": "i",
+    "display": "i",
+    "hint": "short i, as in it",
+    "introducedInLesson": 4,
+    "sayItScript": "This sound is iii. Say it with me: iii."
+  },
+  {
+    "id": "n",
+    "display": "n",
+    "hint": "as in nap",
+    "introducedInLesson": 5,
+    "sayItScript": "This sound is nnn. Say it with me: nnn."
+  },
+  {
+    "id": "m",
+    "display": "m",
+    "hint": "as in mat",
+    "introducedInLesson": 6,
+    "sayItScript": "This sound is mmm. Say it with me: mmm."
+  },
+  {
+    "id": "d",
+    "display": "d",
+    "hint": "as in dot",
+    "introducedInLesson": 7,
+    "sayItScript": "This sound is d. Say it with me: d."
+  },
+  {
+    "id": "e_long",
+    "display": "ē",
+    "macron": true,
+    "hint": "long e, as in me",
+    "introducedInLesson": 8,
+    "sayItScript": "This sound is eee. The line on top means it says its name. Say it with me: eee."
+  },
+  {
+    "id": "o",
+    "display": "o",
+    "hint": "short o, as in on",
+    "introducedInLesson": 9,
+    "sayItScript": "This sound is ooo. Say it with me: ooo."
+  },
+  {
+    "id": "sh",
+    "display": "sh",
+    "team": true,
+    "hint": "as in ship",
+    "introducedInLesson": 17,
+    "sayItScript": "This sound is shhh. Say it with me: shhh."
+  },
+  {
+    "id": "c",
+    "display": "c",
+    "hint": "hard c, as in cat",
+    "introducedInLesson": 11,
+    "sayItScript": "This sound is k. Say it with me: k."
+  },
+  {
+    "id": "g",
+    "display": "g",
+    "hint": "hard g, as in go",
+    "introducedInLesson": 13,
+    "sayItScript": "This sound is g. Say it with me: g."
+  },
+  {
+    "id": "r",
+    "display": "r",
+    "hint": "as in run",
+    "introducedInLesson": 15,
+    "sayItScript": "This sound is rrrr. Say it with me: rrrr."
+  },
+  {
+    "id": "u",
+    "display": "u",
+    "hint": "short u, as in up",
+    "introducedInLesson": 19,
+    "sayItScript": "This sound is uuu. Say it with me: uuu."
+  },
+  {
+    "id": "l",
+    "display": "l",
+    "hint": "as in lap",
+    "introducedInLesson": 21,
+    "sayItScript": "This sound is llll. Say it with me: llll."
+  },
+  {
+    "id": "h",
+    "display": "h",
+    "hint": "as in hat",
+    "introducedInLesson": 23,
+    "sayItScript": "This sound is hhh. Say it with me: hhh."
+  },
+  {
+    "id": "b",
+    "display": "b",
+    "hint": "as in bed",
+    "introducedInLesson": 25,
+    "sayItScript": "This sound is b. Say it with me: b."
+  },
+  {
+    "id": "f",
+    "display": "f",
+    "hint": "as in fun",
+    "introducedInLesson": 27,
+    "sayItScript": "This sound is fff. Say it with me: fff."
+  },
+  {
+    "id": "ee",
+    "display": "ee",
+    "team": true,
+    "hint": "long e team, as in see",
+    "introducedInLesson": 29,
+    "sayItScript": "These two letters make one sound: ee. Say it with me: ee."
+  },
+  {
+    "id": "k",
+    "display": "k",
+    "hint": "as in kite",
+    "introducedInLesson": 31,
+    "sayItScript": "This sound is k. Say it with me: k."
+  },
+  {
+    "id": "w",
+    "display": "w",
+    "hint": "as in wet",
+    "introducedInLesson": 33,
+    "sayItScript": "This sound is wwww. Say it with me: wwww."
+  },
+  {
+    "id": "th",
+    "display": "th",
+    "team": true,
+    "hint": "voiceless th, as in think",
+    "introducedInLesson": 35,
+    "sayItScript": "This sound is th. Put your tongue between your teeth. Say it with me: th."
+  },
+  {
+    "id": "ō",
+    "display": "ō",
+    "macron": true,
+    "hint": "long o, as in go",
+    "introducedInLesson": 37,
+    "sayItScript": "This sound is oh. The line on top means it says its name. Say it with me: oh."
+  },
+  {
+    "id": "j",
+    "display": "j",
+    "hint": "as in jam",
+    "introducedInLesson": 39,
+    "sayItScript": "This sound is j. Say it with me: j."
+  },
+  {
+    "id": "v",
+    "display": "v",
+    "hint": "as in van",
+    "introducedInLesson": 41,
+    "sayItScript": "This sound is vvv. Say it with me: vvv."
+  },
+  {
+    "id": "ā",
+    "display": "ā",
+    "macron": true,
+    "hint": "long a, as in cake",
+    "introducedInLesson": 43,
+    "sayItScript": "This sound is ay. The line on top means it says its name. Say it with me: ay."
+  },
+  {
+    "id": "y",
+    "display": "y",
+    "hint": "as in yes",
+    "introducedInLesson": 45,
+    "sayItScript": "This sound is yyyy. Say it with me: yyyy."
+  },
+  {
+    "id": "z",
+    "display": "z",
+    "hint": "as in zip",
+    "introducedInLesson": 47,
+    "sayItScript": "This sound is zzz. Say it with me: zzz."
+  },
+  {
+    "id": "qu",
+    "display": "qu",
+    "team": true,
+    "hint": "as in quit",
+    "introducedInLesson": 49,
+    "sayItScript": "These two letters make one sound: kw. Say it with me: kw."
+  },
+  {
+    "id": "x",
+    "display": "x",
+    "hint": "as in box",
+    "introducedInLesson": 51,
+    "sayItScript": "This sound is ks. Say it with me: ks."
+  },
+  {
+    "id": "ch",
+    "display": "ch",
+    "team": true,
+    "hint": "as in chip",
+    "introducedInLesson": 53,
+    "sayItScript": "This sound is ch. Say it with me: ch."
+  },
+  {
+    "id": "ī",
+    "display": "ī",
+    "macron": true,
+    "hint": "long i, as in kite",
+    "introducedInLesson": 55,
+    "sayItScript": "This sound is eye. The line on top means it says its name. Say it with me: eye."
+  },
+  {
+    "id": "er",
+    "display": "er",
+    "team": true,
+    "hint": "r-controlled, as in her",
+    "introducedInLesson": 57,
+    "sayItScript": "These two letters make one sound: er. Say it with me: er."
+  },
+  {
+    "id": "oo",
+    "display": "oo",
+    "team": true,
+    "hint": "as in moon",
+    "introducedInLesson": 59,
+    "sayItScript": "These two letters make one sound: oo. Say it with me: oo."
+  },
+  {
+    "id": "ng",
+    "display": "ng",
+    "team": true,
+    "hint": "as in sing",
+    "introducedInLesson": 61,
+    "sayItScript": "These two letters make one sound: ng. Say it with me: ng."
+  },
+  {
+    "id": "ū",
+    "display": "ū",
+    "macron": true,
+    "hint": "long u, as in cube",
+    "introducedInLesson": 63,
+    "sayItScript": "This sound is yoo. The line on top means it says its name. Say it with me: yoo."
+  },
+  {
+    "id": "oy",
+    "display": "oy",
+    "team": true,
+    "hint": "as in boy",
+    "introducedInLesson": 65,
+    "sayItScript": "These two letters make one sound: oy. Say it with me: oy."
+  },
+  {
+    "id": "wh",
+    "display": "wh",
+    "team": true,
+    "hint": "as in when",
+    "introducedInLesson": 67,
+    "sayItScript": "These two letters make one sound: wh. Say it with me: wh."
+  },
+  {
+    "id": "ar",
+    "display": "ar",
+    "team": true,
+    "hint": "r-controlled, as in car",
+    "introducedInLesson": 69,
+    "sayItScript": "These two letters make one sound: ar. Say it with me: ar."
+  }
 ]

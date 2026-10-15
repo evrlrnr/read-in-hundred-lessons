@@ -1,0 +1,85 @@
+{
+  "lesson": 87,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ī",
+        "er",
+        "oo",
+        "ng",
+        "s",
+        "t",
+        "p",
+        "n"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "quit",
+        "rash",
+        "hat",
+        "punch"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!",
+        "These have teams — point to the team and say the sound."
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "wax",
+        "chug",
+        "lunch",
+        "nine",
+        "dice",
+        "per",
+        "her",
+        "book"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast.",
+        "Encourage speed — can they read these words quickly?"
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "pup",
+          "got",
+          "a",
+          "wash"
+        ],
+        [
+          "a",
+          "fox",
+          "ran",
+          "up",
+          "to",
+          "a",
+          "hen"
+        ],
+        [
+          "she",
+          "put",
+          "it",
+          "up",
+          "here"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What did the pup get? What ran to the hen? Where did she put it?"
+      ]
+    }
+  ]
+}

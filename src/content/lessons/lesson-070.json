@@ -1,0 +1,92 @@
+{
+  "lesson": 70,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ar",
+        "wh",
+        "oy",
+        "ū",
+        "ng",
+        "oo",
+        "er",
+        "ī",
+        "ch",
+        "x"
+      ],
+      "script": [
+        "Big review day! Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "bar",
+        "mar",
+        "par",
+        "bark"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "barn",
+        "card",
+        "hard",
+        "harm",
+        "mark",
+        "scar",
+        "yard",
+        "art",
+        "far",
+        "jar"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "boy",
+          "ran",
+          "up",
+          "to",
+          "a",
+          "cart"
+        ],
+        [
+          "a",
+          "kid",
+          "can",
+          "get",
+          "a",
+          "good",
+          "book"
+        ],
+        [
+          "a",
+          "car",
+          "came",
+          "back",
+          "up",
+          "a",
+          "park",
+          "path"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What did the boy run up to? Where can the kid get a book? Where did the car come back up?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "lesson": 20,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "u",
+        "sh",
+        "r",
+        "g",
+        "c",
+        "o",
+        "t",
+        "n",
+        "a",
+        "s"
+      ],
+      "script": [
+        "Big review day! Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "gum",
+        "gun",
+        "cut",
+        "met"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "mop",
+        "mud",
+        "net",
+        "not",
+        "pan",
+        "pat",
+        "pen",
+        "pig"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "mom",
+          "put",
+          "a",
+          "cup",
+          "on",
+          "a",
+          "rug"
+        ],
+        [
+          "a",
+          "pup",
+          "ran",
+          "up",
+          "a",
+          "ramp"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where did Mom put the cup? What did the pup run up?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "lesson": 29,
+  "newSoundIds": [
+    "ee"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "ee",
+      "script": [
+        "Point to the sound.",
+        "These two letters make one sound: ee. Say it with me: ee.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ee",
+        "f",
+        "b",
+        "h",
+        "l",
+        "u"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "lee",
+        "tee",
+        "beep"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "feed",
+        "feel",
+        "seed",
+        "seen",
+        "seep",
+        "pee"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "bee",
+          "can",
+          "see",
+          "me"
+        ],
+        [
+          "a",
+          "green",
+          "frog",
+          "got",
+          "in",
+          "a",
+          "bin"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Who can see me? What color was the frog?"
+      ]
+    }
+  ]
+}

@@ -14,6 +14,7 @@ import {
   mergeProfiles,
   type ImportResult,
 } from '../lib/progress';
+import { applyOutcome, type Card, type CardOutcome } from '../lib/deck';
 
 // Thin React wrapper over the pure progress store. Persists on every change.
 export function useProgress() {
@@ -49,5 +50,12 @@ export function useProgress() {
       if (r.ok) update((s) => mergeProfiles(s, r.state));
       return r;
     },
+    applyOutcome: (profileId: string, card: Card, outcome: CardOutcome) =>
+      update((s) => ({
+        ...s,
+        profiles: s.profiles.map((p) =>
+          p.id === profileId ? applyOutcome(p, card, outcome) : p
+        ),
+      })),
   };
 }

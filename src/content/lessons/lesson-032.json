@@ -1,0 +1,76 @@
+{
+  "lesson": 32,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "k",
+        "ee",
+        "f",
+        "b",
+        "h",
+        "l"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "keg",
+        "ken",
+        "kit",
+        "blast"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "crumb",
+        "seen",
+        "seep",
+        "bad",
+        "ban",
+        "bed",
+        "beg",
+        "bet"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "kid",
+          "can",
+          "run",
+          "up",
+          "a",
+          "ramp"
+        ],
+        [
+          "mom",
+          "got",
+          "a",
+          "cup",
+          "for",
+          "a",
+          "kid"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What can the kid run up? Who did Mom get a cup for?"
+      ]
+    }
+  ]
+}

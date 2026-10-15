@@ -1,0 +1,88 @@
+{
+  "lesson": 30,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ee",
+        "f",
+        "b",
+        "h",
+        "l",
+        "u",
+        "sh",
+        "r",
+        "g",
+        "c"
+      ],
+      "script": [
+        "Big review day! Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "lee",
+        "tee",
+        "been",
+        "beep"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "beet",
+        "bend",
+        "best",
+        "fast",
+        "feed",
+        "feel",
+        "feet",
+        "felt",
+        "fest",
+        "heel"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "bee",
+          "got",
+          "a",
+          "nap"
+        ],
+        [
+          "dad",
+          "hid",
+          "a",
+          "bat",
+          "in",
+          "a",
+          "bag"
+        ],
+        [
+          "a",
+          "green",
+          "pup",
+          "got",
+          "a",
+          "fan"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What did the bee get? Where did Dad hide the bat? What did the pup get?"
+      ]
+    }
+  ]
+}

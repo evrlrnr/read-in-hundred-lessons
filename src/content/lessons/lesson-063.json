@@ -1,0 +1,83 @@
+{
+  "lesson": 63,
+  "newSoundIds": [
+    "ū"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "ū",
+      "script": [
+        "Point to the sound.",
+        "This sound is yoo. The line on top means it says its name. Say it with me: yoo.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ū",
+        "ng",
+        "oo",
+        "er",
+        "ī",
+        "ch"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "lute",
+        "mute",
+        "flute"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "prune",
+        "fuse",
+        "rule",
+        "run",
+        "sap",
+        "say"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "cute",
+          "cube",
+          "fit",
+          "in",
+          "a",
+          "tube"
+        ],
+        [
+          "a",
+          "mule",
+          "got",
+          "a",
+          "cute",
+          "name"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where did the cube fit? What did the mule get?"
+      ]
+    }
+  ]
+}

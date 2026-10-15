@@ -1,44 +1,7845 @@
 [
-  { "id": "a", "graphemes": [ { "g": "a", "soundId": "a" } ] },
-  { "id": "at", "graphemes": [ { "g": "a", "soundId": "a" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "sat", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "a", "soundId": "a" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "tap", "graphemes": [ { "g": "t", "soundId": "t" }, { "g": "a", "soundId": "a" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "pat", "graphemes": [ { "g": "p", "soundId": "p" }, { "g": "a", "soundId": "a" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "sap", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "a", "soundId": "a" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "it", "graphemes": [ { "g": "i", "soundId": "i" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "sit", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "i", "soundId": "i" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "tip", "graphemes": [ { "g": "t", "soundId": "t" }, { "g": "i", "soundId": "i" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "sip", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "i", "soundId": "i" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "pit", "graphemes": [ { "g": "p", "soundId": "p" }, { "g": "i", "soundId": "i" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "an", "graphemes": [ { "g": "a", "soundId": "a" }, { "g": "n", "soundId": "n" } ] },
-  { "id": "in", "graphemes": [ { "g": "i", "soundId": "i" }, { "g": "n", "soundId": "n" } ] },
-  { "id": "pan", "graphemes": [ { "g": "p", "soundId": "p" }, { "g": "a", "soundId": "a" }, { "g": "n", "soundId": "n" } ] },
-  { "id": "nap", "graphemes": [ { "g": "n", "soundId": "n" }, { "g": "a", "soundId": "a" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "pin", "graphemes": [ { "g": "p", "soundId": "p" }, { "g": "i", "soundId": "i" }, { "g": "n", "soundId": "n" } ] },
-  { "id": "tin", "graphemes": [ { "g": "t", "soundId": "t" }, { "g": "i", "soundId": "i" }, { "g": "n", "soundId": "n" } ] },
-  { "id": "ant", "graphemes": [ { "g": "a", "soundId": "a" }, { "g": "n", "soundId": "n" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "am", "graphemes": [ { "g": "a", "soundId": "a" }, { "g": "m", "soundId": "m" } ] },
-  { "id": "mat", "graphemes": [ { "g": "m", "soundId": "m" }, { "g": "a", "soundId": "a" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "man", "graphemes": [ { "g": "m", "soundId": "m" }, { "g": "a", "soundId": "a" }, { "g": "n", "soundId": "n" } ] },
-  { "id": "map", "graphemes": [ { "g": "m", "soundId": "m" }, { "g": "a", "soundId": "a" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "sam", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "a", "soundId": "a" }, { "g": "m", "soundId": "m" } ] },
-  { "id": "dad", "graphemes": [ { "g": "d", "soundId": "d" }, { "g": "a", "soundId": "a" }, { "g": "d", "soundId": "d" } ] },
-  { "id": "sad", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "a", "soundId": "a" }, { "g": "d", "soundId": "d" } ] },
-  { "id": "mad", "graphemes": [ { "g": "m", "soundId": "m" }, { "g": "a", "soundId": "a" }, { "g": "d", "soundId": "d" } ] },
-  { "id": "did", "graphemes": [ { "g": "d", "soundId": "d" }, { "g": "i", "soundId": "i" }, { "g": "d", "soundId": "d" } ] },
-  { "id": "dip", "graphemes": [ { "g": "d", "soundId": "d" }, { "g": "i", "soundId": "i" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "and", "graphemes": [ { "g": "a", "soundId": "a" }, { "g": "n", "soundId": "n" }, { "g": "d", "soundId": "d" } ] },
-  { "id": "sand", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "a", "soundId": "a" }, { "g": "n", "soundId": "n" }, { "g": "d", "soundId": "d" } ] },
-  { "id": "me", "graphemes": [ { "g": "m", "soundId": "m" }, { "g": "e", "soundId": "e_long", "macron": true } ] },
-  { "id": "eat", "graphemes": [ { "g": "e", "soundId": "e_long", "macron": true }, { "g": "a", "silent": true }, { "g": "t", "soundId": "t" } ] },
-  { "id": "on", "graphemes": [ { "g": "o", "soundId": "o" }, { "g": "n", "soundId": "n" } ] },
-  { "id": "not", "graphemes": [ { "g": "n", "soundId": "n" }, { "g": "o", "soundId": "o" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "top", "graphemes": [ { "g": "t", "soundId": "t" }, { "g": "o", "soundId": "o" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "pot", "graphemes": [ { "g": "p", "soundId": "p" }, { "g": "o", "soundId": "o" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "dot", "graphemes": [ { "g": "d", "soundId": "d" }, { "g": "o", "soundId": "o" }, { "g": "t", "soundId": "t" } ] },
-  { "id": "mop", "graphemes": [ { "g": "m", "soundId": "m" }, { "g": "o", "soundId": "o" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "mom", "graphemes": [ { "g": "m", "soundId": "m" }, { "g": "o", "soundId": "o" }, { "g": "m", "soundId": "m" } ] },
-  { "id": "stop", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "t", "soundId": "t" }, { "g": "o", "soundId": "o" }, { "g": "p", "soundId": "p" } ] },
-  { "id": "pond", "graphemes": [ { "g": "p", "soundId": "p" }, { "g": "o", "soundId": "o" }, { "g": "n", "soundId": "n" }, { "g": "d", "soundId": "d" } ] },
-  { "id": "ship", "graphemes": [ { "g": "s", "soundId": "s" }, { "g": "sh", "soundId": "sh", "team": true }, { "g": "i", "soundId": "i" }, { "g": "p", "soundId": "p" } ] }
+  {
+    "id": "a",
+    "graphemes": [
+      {
+        "g": "a",
+        "soundId": "a"
+      }
+    ]
+  },
+  {
+    "id": "act",
+    "graphemes": [
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "am",
+    "graphemes": [
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "an",
+    "graphemes": [
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "and",
+    "graphemes": [
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "ant",
+    "graphemes": [
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "art",
+    "graphemes": [
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "at",
+    "graphemes": [
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "ate",
+    "graphemes": [
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "ax",
+    "graphemes": [
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "back",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "bad",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "bag",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "bake",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "ban",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "bang",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "bar",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "bark",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "barn",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "bat",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "bed",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "bee",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "been",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "beep",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "beet",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "beg",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "belt",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "bench",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "bend",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "best",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "bet",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "bib",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "bid",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "big",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "bin",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "bit",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "bite",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "blast",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "bone",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "o",
+        "soundId": "ō",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "book",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "boom",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "bot",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "box",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "boy",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "oy",
+        "soundId": "oy",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "bring",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "bug",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "bun",
+    "graphemes": [
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "cake",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "cam",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "came",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "camp",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "can",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "cane",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "cap",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "car",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "card",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "cart",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "cash",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "cat",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "char",
+    "graphemes": [
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "chat",
+    "graphemes": [
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "chin",
+    "graphemes": [
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "chip",
+    "graphemes": [
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "chop",
+    "graphemes": [
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "chug",
+    "graphemes": [
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "clap",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "cod",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "cook",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "cop",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "cot",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "coy",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "oy",
+        "soundId": "oy",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "crumb",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "cube",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "cup",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "cut",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "cute",
+    "graphemes": [
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "dad",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "dark",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "date",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "day",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "y",
+        "soundId": "y"
+      }
+    ]
+  },
+  {
+    "id": "dice",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "did",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "dig",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "dip",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "ditch",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "do",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "o",
+        "soundId": "ō",
+        "macron": true
+      }
+    ]
+  },
+  {
+    "id": "dock",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "dog",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "dot",
+    "graphemes": [
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "eat",
+    "graphemes": [
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "a",
+        "silent": true,
+        "soundId": "e"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "fab",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "face",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "fad",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "fade",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "fan",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "fang",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "far",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "farm",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "fast",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "fat",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "fed",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "feed",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "feel",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      }
+    ]
+  },
+  {
+    "id": "feet",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "felt",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "fen",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "fern",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "er",
+        "soundId": "er",
+        "team": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "fest",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "fib",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "fin",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "fine",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "fish",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "fit",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "five",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "fix",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "flag",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "flex",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "flute",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "fob",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "fog",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "foot",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "for",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      }
+    ]
+  },
+  {
+    "id": "fox",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "frog",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "fun",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "fuse",
+    "graphemes": [
+      {
+        "g": "f",
+        "soundId": "f"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "gag",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "game",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "gap",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "gas",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      }
+    ]
+  },
+  {
+    "id": "gate",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "gave",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "germ",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "er",
+        "soundId": "er",
+        "team": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "get",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "girl",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      }
+    ]
+  },
+  {
+    "id": "go",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "o",
+        "soundId": "ō",
+        "macron": true
+      }
+    ]
+  },
+  {
+    "id": "gong",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "good",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "goop",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "got",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "green",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "gum",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "gun",
+    "graphemes": [
+      {
+        "g": "g",
+        "soundId": "g"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "had",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "ham",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "hand",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "hang",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "hard",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "harm",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "hat",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "he",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      }
+    ]
+  },
+  {
+    "id": "heel",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      }
+    ]
+  },
+  {
+    "id": "hen",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "her",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "er",
+        "soundId": "er",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "herd",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "er",
+        "soundId": "er",
+        "team": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "here",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "hex",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "hid",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "him",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "hint",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "his",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      }
+    ]
+  },
+  {
+    "id": "hit",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "hive",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "hook",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "hop",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "hot",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "hum",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "hunt",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "hut",
+    "graphemes": [
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "i",
+    "graphemes": [
+      {
+        "g": "i",
+        "soundId": "i"
+      }
+    ]
+  },
+  {
+    "id": "in",
+    "graphemes": [
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "is",
+    "graphemes": [
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      }
+    ]
+  },
+  {
+    "id": "it",
+    "graphemes": [
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "jab",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "jag",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "jam",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "jar",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "jet",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "jig",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "jin",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "job",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "jot",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "joy",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "oy",
+        "soundId": "oy",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "jug",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "jump",
+    "graphemes": [
+      {
+        "g": "j",
+        "soundId": "j"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "keg",
+    "graphemes": [
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "ken",
+    "graphemes": [
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "kid",
+    "graphemes": [
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "king",
+    "graphemes": [
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "kit",
+    "graphemes": [
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      }
+    ]
+  },
+  {
+    "id": "kite",
+    "graphemes": [
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "lab",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "lace",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "lad",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "lag",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "lake",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "lam",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "lamp",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "land",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "lap",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "late",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "lee",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "leg",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "let",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "lid",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "like",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "limb",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "lime",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "line",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "lint",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "lip",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "list",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "lit",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "lob",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "log",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "long",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "look",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "loom",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "lot",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "lunch",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "lute",
+    "graphemes": [
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "mad",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "made",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "make",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "man",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "mang",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "map",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "mar",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "march",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "mark",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "mat",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "match",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "may",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "y",
+        "soundId": "y"
+      }
+    ]
+  },
+  {
+    "id": "me",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      }
+    ]
+  },
+  {
+    "id": "meet",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "met",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "mist",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "mite",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "mix",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "mo",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "o",
+        "soundId": "ō",
+        "macron": true
+      }
+    ]
+  },
+  {
+    "id": "mom",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "moon",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "mop",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "much",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "mud",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "mug",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "mule",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "mute",
+    "graphemes": [
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "name",
+    "graphemes": [
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "nap",
+    "graphemes": [
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "need",
+    "graphemes": [
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "net",
+    "graphemes": [
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "nice",
+    "graphemes": [
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "nine",
+    "graphemes": [
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "no",
+    "graphemes": [
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "o",
+        "soundId": "ō",
+        "macron": true
+      }
+    ]
+  },
+  {
+    "id": "noon",
+    "graphemes": [
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "not",
+    "graphemes": [
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "on",
+    "graphemes": [
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "ox",
+    "graphemes": [
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "pan",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "par",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "park",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "pat",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "patch",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "path",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "th",
+        "soundId": "th",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "pee",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "peep",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "pen",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "per",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "er",
+        "soundId": "er",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "pig",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "pike",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "pin",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "pit",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "plant",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "plate",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "play",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "y",
+        "soundId": "y"
+      }
+    ]
+  },
+  {
+    "id": "ploy",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "oy",
+        "soundId": "oy",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "plum",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "pond",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "pong",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "pot",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "prune",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "punch",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "pup",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "put",
+    "graphemes": [
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "quack",
+    "graphemes": [
+      {
+        "g": "qu",
+        "soundId": "qu",
+        "team": true
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "queen",
+    "graphemes": [
+      {
+        "g": "qu",
+        "soundId": "qu",
+        "team": true
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "quick",
+    "graphemes": [
+      {
+        "g": "qu",
+        "soundId": "qu",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "quilt",
+    "graphemes": [
+      {
+        "g": "qu",
+        "soundId": "qu",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "quip",
+    "graphemes": [
+      {
+        "g": "qu",
+        "soundId": "qu",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "quit",
+    "graphemes": [
+      {
+        "g": "qu",
+        "soundId": "qu",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "quiz",
+    "graphemes": [
+      {
+        "g": "qu",
+        "soundId": "qu",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "z",
+        "soundId": "z"
+      }
+    ]
+  },
+  {
+    "id": "rag",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "ram",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "ramp",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "ran",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "rash",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "rat",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "rate",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "red",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "rich",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "ride",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "rig",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "ring",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "rip",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "rock",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "k",
+        "soundId": "c"
+      }
+    ]
+  },
+  {
+    "id": "rot",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "rug",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "rule",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "run",
+    "graphemes": [
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "sad",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "sam",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "same",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "sand",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "sang",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "sap",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "sat",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "save",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "say",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "y",
+        "soundId": "y"
+      }
+    ]
+  },
+  {
+    "id": "scar",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "c",
+        "soundId": "c"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "see",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "seed",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "seen",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "seep",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "set",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "she",
+    "graphemes": [
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      }
+    ]
+  },
+  {
+    "id": "shin",
+    "graphemes": [
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "ship",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "shone",
+    "graphemes": [
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      },
+      {
+        "g": "o",
+        "soundId": "ō",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "shop",
+    "graphemes": [
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "shot",
+    "graphemes": [
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "shut",
+    "graphemes": [
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "sing",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "sink",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "k",
+        "soundId": "k"
+      }
+    ]
+  },
+  {
+    "id": "sip",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "sit",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "site",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "snug",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "so",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "o",
+        "soundId": "ō",
+        "macron": true
+      }
+    ]
+  },
+  {
+    "id": "song",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "soy",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "oy",
+        "soundId": "oy",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "spin",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "spot",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "spring",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "star",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "sting",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "stop",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "string",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "r",
+        "soundId": "r"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "such",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "ch",
+        "soundId": "ch",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "sun",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "swam",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "swing",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "swung",
+    "graphemes": [
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "tang",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "tap",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "tape",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "tar",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "tax",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "tee",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "ee",
+        "soundId": "ee",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "tent",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "them",
+    "graphemes": [
+      {
+        "g": "th",
+        "soundId": "th",
+        "team": true
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "then",
+    "graphemes": [
+      {
+        "g": "th",
+        "soundId": "th",
+        "team": true
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "thin",
+    "graphemes": [
+      {
+        "g": "th",
+        "soundId": "th",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "thing",
+    "graphemes": [
+      {
+        "g": "th",
+        "soundId": "th",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "this",
+    "graphemes": [
+      {
+        "g": "th",
+        "soundId": "th",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      }
+    ]
+  },
+  {
+    "id": "thud",
+    "graphemes": [
+      {
+        "g": "th",
+        "soundId": "th",
+        "team": true
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "time",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "tin",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "tip",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "to",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      }
+    ]
+  },
+  {
+    "id": "top",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "toy",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "oy",
+        "soundId": "oy",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "tub",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "tube",
+    "graphemes": [
+      {
+        "g": "t",
+        "soundId": "t"
+      },
+      {
+        "g": "ū",
+        "soundId": "ū",
+        "macron": true
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "un",
+    "graphemes": [
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "up",
+    "graphemes": [
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "us",
+    "graphemes": [
+      {
+        "g": "u",
+        "soundId": "u"
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      }
+    ]
+  },
+  {
+    "id": "van",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "vat",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "vent",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "verb",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "er",
+        "soundId": "er",
+        "team": true
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "vest",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "vet",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "vex",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "vim",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "vin",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "vine",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "vip",
+    "graphemes": [
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "wag",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "wan",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "wash",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "sh",
+        "soundId": "sh",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "wave",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "v",
+        "soundId": "v"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "wax",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "x",
+        "soundId": "x"
+      }
+    ]
+  },
+  {
+    "id": "way",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "y",
+        "soundId": "y"
+      }
+    ]
+  },
+  {
+    "id": "we",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      }
+    ]
+  },
+  {
+    "id": "web",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "b",
+        "soundId": "b"
+      }
+    ]
+  },
+  {
+    "id": "went",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "wet",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "whale",
+    "graphemes": [
+      {
+        "g": "wh",
+        "soundId": "wh",
+        "team": true
+      },
+      {
+        "g": "ā",
+        "soundId": "ā",
+        "macron": true
+      },
+      {
+        "g": "l",
+        "soundId": "l"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "wham",
+    "graphemes": [
+      {
+        "g": "wh",
+        "soundId": "wh",
+        "team": true
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "whap",
+    "graphemes": [
+      {
+        "g": "wh",
+        "soundId": "wh",
+        "team": true
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "when",
+    "graphemes": [
+      {
+        "g": "wh",
+        "soundId": "wh",
+        "team": true
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "whet",
+    "graphemes": [
+      {
+        "g": "wh",
+        "soundId": "wh",
+        "team": true
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "whim",
+    "graphemes": [
+      {
+        "g": "wh",
+        "soundId": "wh",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "m",
+        "soundId": "m"
+      }
+    ]
+  },
+  {
+    "id": "whip",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "h",
+        "soundId": "h"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "whit",
+    "graphemes": [
+      {
+        "g": "wh",
+        "soundId": "wh",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "whiz",
+    "graphemes": [
+      {
+        "g": "wh",
+        "soundId": "wh",
+        "team": true
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "z",
+        "soundId": "z"
+      }
+    ]
+  },
+  {
+    "id": "whop",
+    "graphemes": [
+      {
+        "g": "wh",
+        "soundId": "wh",
+        "team": true
+      },
+      {
+        "g": "o",
+        "soundId": "o"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "wide",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "ī",
+        "soundId": "ī",
+        "macron": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      },
+      {
+        "g": "e",
+        "soundId": "e",
+        "silent": true
+      }
+    ]
+  },
+  {
+    "id": "wig",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "win",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "wind",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "wing",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "ng",
+        "soundId": "ng",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "wit",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "t",
+        "soundId": "t"
+      }
+    ]
+  },
+  {
+    "id": "with",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "th",
+        "soundId": "th",
+        "team": true
+      }
+    ]
+  },
+  {
+    "id": "wood",
+    "graphemes": [
+      {
+        "g": "w",
+        "soundId": "w"
+      },
+      {
+        "g": "oo",
+        "soundId": "oo",
+        "team": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "yap",
+    "graphemes": [
+      {
+        "g": "y",
+        "soundId": "y"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "yard",
+    "graphemes": [
+      {
+        "g": "y",
+        "soundId": "y"
+      },
+      {
+        "g": "ar",
+        "soundId": "ar",
+        "team": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "yes",
+    "graphemes": [
+      {
+        "g": "y",
+        "soundId": "y"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "s",
+        "soundId": "s"
+      }
+    ]
+  },
+  {
+    "id": "zag",
+    "graphemes": [
+      {
+        "g": "z",
+        "soundId": "z"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "zap",
+    "graphemes": [
+      {
+        "g": "z",
+        "soundId": "z"
+      },
+      {
+        "g": "a",
+        "soundId": "a"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  },
+  {
+    "id": "zed",
+    "graphemes": [
+      {
+        "g": "z",
+        "soundId": "z"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "d",
+        "soundId": "d"
+      }
+    ]
+  },
+  {
+    "id": "zen",
+    "graphemes": [
+      {
+        "g": "z",
+        "soundId": "z"
+      },
+      {
+        "g": "e",
+        "soundId": "e_long",
+        "macron": true
+      },
+      {
+        "g": "n",
+        "soundId": "n"
+      }
+    ]
+  },
+  {
+    "id": "zig",
+    "graphemes": [
+      {
+        "g": "z",
+        "soundId": "z"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "g",
+        "soundId": "g"
+      }
+    ]
+  },
+  {
+    "id": "zip",
+    "graphemes": [
+      {
+        "g": "z",
+        "soundId": "z"
+      },
+      {
+        "g": "i",
+        "soundId": "i"
+      },
+      {
+        "g": "p",
+        "soundId": "p"
+      }
+    ]
+  }
 ]

@@ -1,0 +1,80 @@
+{
+  "lesson": 23,
+  "newSoundIds": [
+    "h"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "h",
+      "script": [
+        "Point to the sound.",
+        "This sound is hhh. Say it with me: hhh.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "h",
+        "l",
+        "u",
+        "sh",
+        "r"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "ham",
+        "him",
+        "his"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "hum",
+        "hang",
+        "hint",
+        "hop",
+        "hut",
+        "lad"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "hen",
+          "hid",
+          "in",
+          "a",
+          "hat"
+        ],
+        [
+          "sam",
+          "hit",
+          "a",
+          "tin",
+          "can"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where did the hen hide? What did Sam hit?"
+      ]
+    }
+  ]
+}

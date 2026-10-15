@@ -1,74 +1,141 @@
 import { useState } from 'react';
-import { lessons, soundById } from './content';
+import { lessons, sounds, words } from './content';
+import { useProgress } from './hooks/useProgress';
 import { LessonPlayer } from './components/LessonPlayer';
 import { OrthoTestPage } from './components/OrthoTestPage';
+import { ProfileHome } from './components/ProfileHome';
+import { Dashboard } from './components/Dashboard';
+import { Settings } from './components/Settings';
+import { CompleteScreen } from './components/CompleteScreen';
+import { Practice } from './components/Practice';
+import { MasteryGrid } from './components/MasteryGrid';
 
 type Screen =
   | { view: 'home' }
-  | { view: 'lesson'; n: number }
-  | { view: 'complete'; n: number };
+  | { view: 'dashboard'; profileId: string }
+  | { view: 'lesson'; profileId: string; n: number; repeat: boolean }
+  | { view: 'complete'; profileId: string; n: number; flaggedCount: number }
+  | { view: 'settings' }
+  | { view: 'practice'; profileId: string };
 
 // Dev-only visual test page for the orthography component.
 const isDevOrtho =
   typeof window !== 'undefined' &&
   (window.location.pathname.endsWith('/dev/ortho') || window.location.hash === '#/dev/ortho');
 
+function Missing({ onHome }: { onHome: () => void }) {
+  return (
+    <div className="complete">
+      <h1>Oops</h1>
+      <p>That page isn't available.</p>
+      <button className="nav-btn" onClick={onHome}>
+        Back to home
+      </button>
+    </div>
+  );
+}
+
 export function App() {
+  const progress = useProgress();
   const [screen, setScreen] = useState<Screen>({ view: 'home' });
 
   if (isDevOrtho) {
     return <OrthoTestPage />;
   }
 
+  const profileFor = (id: string) => progress.state.profiles.find((p) => p.id === id) ?? null;
+  const goHome = () => setScreen({ view: 'home' });
+
   if (screen.view === 'lesson') {
-    const lesson = lessons.find((l) => l.lesson === screen.n)!;
+    const profile = profileFor(screen.profileId);
+    const lesson = lessons.find((l) => l.lesson === screen.n);
+    if (!profile || !lesson) return <Missing onHome={goHome} />;
     return (
       <LessonPlayer
         lesson={lesson}
-        onExit={() => setScreen({ view: 'home' })}
-        onComplete={() => setScreen({ view: 'complete', n: screen.n })}
+        flags={profile.flags}
+        onToggleSoundFlag={(sid) => progress.toggleSoundFlag(profile.id, sid)}
+        onToggleWordFlag={(wid) => progress.toggleWordFlag(profile.id, wid)}
+        onExit={() => setScreen({ view: 'dashboard', profileId: profile.id })}
+        onComplete={(flaggedCount) => {
+          progress.completeLesson(profile.id, screen.n, screen.repeat);
+          setScreen({ view: 'complete', profileId: profile.id, n: screen.n, flaggedCount });
+        }}
       />
     );
   }
 
   if (screen.view === 'complete') {
+    const profile = profileFor(screen.profileId);
+    if (!profile) return <Missing onHome={goHome} />;
     const next = lessons.find((l) => l.lesson === screen.n + 1);
     return (
-      <div className="complete">
-        <h1>🎉 Lesson {screen.n} done!</h1>
-        <p>Great reading today. Give a high five!</p>
-        {next ? (
-          <button className="nav-btn primary" onClick={() => setScreen({ view: 'lesson', n: next.lesson })}>
-            Start lesson {next.lesson}
-          </button>
-        ) : (
-          <p className="all-done">That's every lesson so far — amazing work! 🌟</p>
-        )}
-        <button className="nav-btn" onClick={() => setScreen({ view: 'home' })}>
-          Back to lessons
-        </button>
-      </div>
+      <CompleteScreen
+        lessonN={screen.n}
+        profileName={profile.name}
+        flaggedCount={screen.flaggedCount}
+        hasNext={!!next}
+        onRepeat={() => setScreen({ view: 'lesson', profileId: profile.id, n: screen.n, repeat: true })}
+        onNext={() => next && setScreen({ view: 'lesson', profileId: profile.id, n: next.lesson, repeat: false })}
+        onBack={() => setScreen({ view: 'dashboard', profileId: profile.id })}
+      />
+    );
+  }
+
+  if (screen.view === 'dashboard') {
+    const profile = profileFor(screen.profileId);
+    if (!profile) return <Missing onHome={goHome} />;
+    return (
+      <Dashboard
+        profile={profile}
+        totalLessons={lessons.length}
+        sounds={sounds}
+        onBack={goHome}
+        onContinue={() =>
+          setScreen({ view: 'lesson', profileId: profile.id, n: profile.currentLesson, repeat: false })
+        }
+        onPractice={() => setScreen({ view: 'practice', profileId: profile.id })}
+        onSettings={() => setScreen({ view: 'settings' })}
+      />
+    );
+  }
+
+  if (screen.view === 'settings') {
+    return (
+      <Settings
+        state={progress.state}
+        onBack={goHome}
+        importReplace={progress.importReplace}
+        importAdd={progress.importAdd}
+      />
+    );
+  }
+
+  if (screen.view === 'practice') {
+    const profile = profileFor(screen.profileId);
+    if (!profile) return <Missing onHome={goHome} />;
+    return (
+      <Practice
+        profile={profile}
+        sounds={sounds}
+        words={words}
+        lessons={lessons}
+        onApplyOutcome={(card, outcome) => progress.applyOutcome(profile.id, card, outcome)}
+        onBack={() => setScreen({ view: 'dashboard', profileId: profile.id })}
+      />
     );
   }
 
   return (
-    <div className="home">
-      <h1>Reading Lessons</h1>
-      <p className="subtitle">Pick a lesson to begin. The gray strip shows you what to say.</p>
-      <ul className="lesson-list">
-        {lessons.map((l) => (
-          <li key={l.lesson}>
-            <button className="lesson-btn" onClick={() => setScreen({ view: 'lesson', n: l.lesson })}>
-              <strong>Lesson {l.lesson}</strong>
-              <span>
-                {l.newSoundIds.length > 0
-                  ? 'New: ' + l.newSoundIds.map((id) => soundById.get(id)?.display ?? id).join(', ')
-                  : 'Review day'}
-              </span>
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ProfileHome
+      profiles={progress.state.profiles}
+      onAdd={(name) => progress.addProfile(name)}
+      onRename={(id, name) => progress.renameProfile(id, name)}
+      onDelete={(id) => progress.deleteProfile(id)}
+      onSelect={(id) => {
+        progress.setActiveProfile(id);
+        setScreen({ view: 'dashboard', profileId: id });
+      }}
+    />
   );
 }

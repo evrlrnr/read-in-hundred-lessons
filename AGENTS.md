@@ -6,12 +6,27 @@ A web app that gives parents/teachers a scripted, sequenced phonics lesson exper
 is in **TECHNICAL_PLAN.md — read it before writing any code. It is the source of
 truth.** Past decisions and lessons learned are in **loop-knowledge.md**.
 
-## Current status (2026-10-14)
+## Current status (2026-10-15)
 - **M1 done**: content schemas, decodability validator, 10 original lessons authored
 - **M2 done**: lesson player — all 10 lessons verified end to end on a mobile viewport
 - **M3 done**: `<DecodableWord>` orthography component (team arcs, drawn macron bar,
   silent letters, per-sound-unit blending guide) + `/dev/ortho` visual test page
-- **Next: M4** (progress: profiles, flags, export/import)
+- **M4 done**: progress — profiles, flags, export/import
+- **M5 done**: practice deck (3-rule algorithm, flashcard UI) + mastery grid
+- **M6 in progress** (full content + ship: 100 lessons, deploy, a11y)
+  - **H-D1 done**: `SOUND_SCHEDULE.md` — full 40-sound → 100-lesson map, templates,
+    complexity progression, orthography fade-out, 9-batch authoring plan
+  - **L-D1 done + quality-fixed**: freebuff authored all 100 lessons; strong model
+    then fixed nonsense words, JSON script-shape bugs (35 files), word-count
+    overflow (L50), and rewrote ALL fluency "sentences" (71–100) as real sentences
+    (`scripts/fix-fluency.mjs`) + added 69 decodable high-frequency words to the
+    bank (he/she/we/dog/frog/like/came/…). Current state: validator PASS
+    (100 lessons, 414 words, 40 sounds), 31/31 tests, tsc clean, build clean.
+  - **Queued for freebuff** (see `handoff.md`): L-D2 (print stylesheet),
+    L-D3 (accessibility pass) — freebuff must NOT re-author lesson content.
+  - **Remaining for strong model / user**: H-D2 (originality review of lessons
+    11–70 — the 71–100 pass is done since strong model rewrote them),
+    H-D3 (deploy target + sign-off)
 - Schema note: lessons use `newSoundIds` (an ARRAY — lesson 1 introduces two sounds),
   matching src/types/content.ts and the validator. Do not "fix" it to singular.
 - Validator now also emits **non-fatal warnings** for planned-but-unauthored sounds
@@ -51,6 +66,8 @@ The roadmap (plan §8) has milestones M1–M6, each with a "done when" check.
   the user instead of silently deviating. Deviations must be recorded in
   loop-knowledge.md under "Decisions changed during build".
 - After each milestone, append what worked / what didn't to loop-knowledge.md.
+- **Never hibernate/sleep/shut down the machine** after finishing work. Only do it
+  when the user explicitly asks in the current conversation (user decision, 2026-10-15).
 
 ## Conventions
 - TypeScript, functional React components, no class components

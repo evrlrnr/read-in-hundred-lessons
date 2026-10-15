@@ -1,0 +1,85 @@
+{
+  "lesson": 69,
+  "newSoundIds": [
+    "ar"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "ar",
+      "script": [
+        "Point to the sound.",
+        "These two letters make one sound: ar. Say it with me: ar.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ar",
+        "wh",
+        "oy",
+        "ū",
+        "ng",
+        "oo"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "bar",
+        "mar",
+        "par"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "card",
+        "hard",
+        "yard",
+        "art",
+        "far",
+        "tar"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "car",
+          "can",
+          "march",
+          "up",
+          "a",
+          "park",
+          "path"
+        ],
+        [
+          "a",
+          "star",
+          "shone",
+          "on",
+          "a",
+          "dark",
+          "farm"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where can the car march? What shone on the farm?"
+      ]
+    }
+  ]
+}

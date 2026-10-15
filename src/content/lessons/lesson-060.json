@@ -1,0 +1,80 @@
+{
+  "lesson": 60,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "oo",
+        "er",
+        "ī",
+        "ch",
+        "x",
+        "qu",
+        "z",
+        "y",
+        "ā",
+        "v"
+      ],
+      "script": [
+        "Big review day! Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "goop",
+        "ken",
+        "kit",
+        "lab"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "lad",
+        "lag",
+        "lam",
+        "lap",
+        "lee",
+        "leg",
+        "let",
+        "lid",
+        "lip",
+        "lit"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "kid",
+          "can",
+          "cook",
+          "a",
+          "plum"
+        ],
+        [
+          "a",
+          "pup",
+          "sat",
+          "up",
+          "at",
+          "noon"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What can the kid cook? When did the pup sit up?"
+      ]
+    }
+  ]
+}

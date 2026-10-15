@@ -1,0 +1,83 @@
+{
+  "lesson": 57,
+  "newSoundIds": [
+    "er"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "er",
+      "script": [
+        "Point to the sound.",
+        "These two letters make one sound: er. Say it with me: er.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "er",
+        "ī",
+        "ch",
+        "x",
+        "qu",
+        "z"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "germ",
+        "herd",
+        "verb"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "per",
+        "gun",
+        "ham",
+        "him",
+        "his",
+        "hop"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "vet",
+          "met",
+          "her",
+          "at",
+          "a",
+          "bench"
+        ],
+        [
+          "her",
+          "pen",
+          "is",
+          "on",
+          "a",
+          "fern"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where did the Vet meet her? Where is her pen?"
+      ]
+    }
+  ]
+}

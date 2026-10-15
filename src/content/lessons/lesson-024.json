@@ -1,0 +1,76 @@
+{
+  "lesson": 24,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "h",
+        "l",
+        "u",
+        "sh",
+        "r",
+        "g"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "ham",
+        "him",
+        "his",
+        "hum"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "hand",
+        "hang",
+        "here",
+        "hint",
+        "hunt",
+        "plant",
+        "gum",
+        "gun"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "dad",
+          "hid",
+          "a",
+          "map",
+          "in",
+          "a",
+          "hat"
+        ],
+        [
+          "a",
+          "hen",
+          "got",
+          "mud",
+          "on",
+          "a",
+          "mat"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where did Dad hide the map? Where did the hen get mud?"
+      ]
+    }
+  ]
+}

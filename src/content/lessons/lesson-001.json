@@ -1,6 +1,38 @@
-{ "lesson": 1, "newSoundIds": ["s", "a"],
+{
+  "lesson": 1,
+  "newSoundIds": [
+    "s",
+    "a"
+  ],
   "tasks": [
-    { "type": "newSound", "soundId": "s", "script": ["Point to the sound.", "This sound is sss. Say it with me: sss.", "Your turn. What sound? Good."] },
-    { "type": "newSound", "soundId": "a", "script": ["Point to the sound.", "This sound is aaa. Say it with me: aaa.", "Your turn. What sound? Good."] },
-    { "type": "soundReview", "soundIds": ["s", "a"], "script": ["Point to each sound and ask: What sound?", "If the child pauses, say it together, then ask again."] }
-  ] }
+    {
+      "type": "newSound",
+      "soundId": "s",
+      "script": [
+        "Point to the sound.",
+        "This sound is sss. Say it with me: sss.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "newSound",
+      "soundId": "a",
+      "script": [
+        "Point to the sound.",
+        "This sound is aaa. Say it with me: aaa.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "s",
+        "a"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    }
+  ]
+}

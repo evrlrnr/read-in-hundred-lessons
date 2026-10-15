@@ -1,7 +1,54 @@
-{ "lesson": 5, "newSoundIds": ["n"],
+{
+  "lesson": 5,
+  "newSoundIds": [
+    "n"
+  ],
   "tasks": [
-    { "type": "newSound", "soundId": "n", "script": ["Point to the sound.", "This sound is nnn. Say it with me: nnn.", "Your turn. What sound? Good."] },
-    { "type": "soundReview", "soundIds": ["i", "p", "t", "a", "s"], "script": ["Point to each sound and ask: What sound?"] },
-    { "type": "blend", "wordIds": ["an", "in"], "script": ["Say it slowly with me... now say it fast!"] },
-    { "type": "wordRead", "wordIds": ["pan", "nap", "pin", "tin", "ant", "sit"], "script": ["Have the child sound out each word, then read it fast."] }
-  ] }
+    {
+      "type": "newSound",
+      "soundId": "n",
+      "script": [
+        "Point to the sound.",
+        "This sound is nnn. Say it with me: nnn.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "i",
+        "p",
+        "t",
+        "a",
+        "s"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?"
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "an",
+        "in"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "pan",
+        "nap",
+        "pin",
+        "tin",
+        "ant",
+        "sit"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    }
+  ]
+}

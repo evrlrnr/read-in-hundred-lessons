@@ -1,0 +1,84 @@
+{
+  "lesson": 53,
+  "newSoundIds": [
+    "ch"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "ch",
+      "script": [
+        "Point to the sound.",
+        "This sound is ch. Say it with me: ch.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ch",
+        "x",
+        "qu",
+        "z",
+        "y",
+        "ā"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "match",
+        "patch",
+        "chop"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "chin",
+        "chug",
+        "rich",
+        "green",
+        "plant",
+        "plate"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "kid",
+          "had",
+          "lunch",
+          "in",
+          "a",
+          "hut"
+        ],
+        [
+          "a",
+          "chip",
+          "can",
+          "march",
+          "up",
+          "a",
+          "path"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where did the kid have lunch? Where can the chip march?"
+      ]
+    }
+  ]
+}

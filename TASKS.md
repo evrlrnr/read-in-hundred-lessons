@@ -40,54 +40,74 @@ Added `sh` (lesson 17) + `ship`. Validator warns (expected) but passes.
 
 ---
 
-## Phase B — M4 Progress
+## Phase B — M4 Progress ✅ DONE (2026-10-14)
 
-### H-B1 · Specify the deck algorithm as numbered rules 🔴
+### H-B1 · Specify the deck algorithm as numbered rules 🔴 ✅
 §6 rule 3 — "missed/seen ≥ 0.5 over its last 4 practice exposures" — is ambiguous
 when `seen < 4`. loop-knowledge.md flags hand-waved scheduling logic as a
 recurring weakness. Force it into numbered deterministic rules + 3 scripted
 scenarios with expected card lists.
 Done-check: 3 scenarios with exact expected output, written down.
+Spec: `DECK_ALGORITHM.md` — numbered rules, `seen<4` resolved as a data-sufficiency
+gate (keeps v1 schema), seeded mulberry32 shuffle, 3 scenarios with exact outputs.
 
-### H-B2 · Pin progress schema + migration policy 🔴
+### H-B2 · Pin progress schema + migration policy 🔴 ✅
 v1 exists as a stub. Decide: validation rules on import, id generation,
 what `version` bumping triggers, behavior on corrupt localStorage.
 Done-check: schema + migration contract documented (plan §7).
+Resolved in `src/lib/progress.ts`: `validateProgress` (import rules), `newId`
+(prefix + time + random), `migrate` (version-gated, v1 current), corrupt/invalid
+stored data falls back to a fresh empty state.
 
-### L-B1 · Implement progress store module 🟢
+### L-B1 · Implement progress store module 🟢 ✅
 Input: H-B2. Pure TS, no UI.
 Done-check: round-trip test — export → wipe → import restores state exactly.
+`src/lib/progress.ts` + `src/hooks/useProgress.ts`. Round-trip test passes.
 
-### L-B2 · Home screen: profile picker + add/rename/delete 🟢
+### L-B2 · Home screen: profile picker + add/rename/delete 🟢 ✅
 Done-check: profiles persist across reload.
+`src/components/ProfileHome.tsx`. Persists via `useProgress` (localStorage).
 
-### L-B3 · Export / import UI 🟢
+### L-B3 · Export / import UI 🟢 ✅
 Input: H-B2. Replace-all vs add-as-new-profiles, no field merging.
 Done-check: manual round-trip on a real device viewport.
+`src/components/Settings.tsx` — dated JSON download; file picker with dry
+validation, then Replace-all / Add-as-new-profiles.
 
-### L-B4 · Wire ⚑ flag-for-review into the lesson player 🟢
+### L-B4 · Wire ⚑ flag-for-review into the lesson player 🟢 ✅
 Done-check: flags survive reload and appear in practice deck input.
+`src/components/LessonPlayer.tsx` — flag button on every sound + word; toggles
+persist to the profile. Complete screen offers "repeat lesson" when ≥2 flagged.
 
 ---
 
-## Phase C — M5 Practice + progress view
+## Phase C — M5 Practice + progress view ✅ DONE (2026-10-14)
 
-### H-C1 · Mastery grid definition 🔴
-What counts as "mastered" per sound, from `practiceStats`. Plan says the grid
-"matches data" but never defines the mapping.
-Done-check: written mapping + example.
+### H-C1 · Mastery grid definition 🔴 ✅
+States: "new" (unpracticed or not yet introduced), "learning" (practiced but
+not mastered, or currently flagged), "mastered" (seen>=4 AND missed/seen<0.5
+AND not flagged). Only sounds with introducedInLesson <= currentLesson appear.
+Spec: `src/lib/mastery.ts` + `test/mastery.test.mjs` (7 tests).
 
-### L-C1 · Implement deck algorithm 🟢
-Input: H-B1. Pure function, no React.
+### L-C1 · Implement deck algorithm 🟢 ✅
+Input: H-B1 (DECK_ALGORITHM.md). Pure function, no React.
 Done-check: 3 scripted scenarios pass as unit tests.
+`src/lib/deck.ts` — `buildDeck(profile, content, seed) -> Card[]` +
+`applyOutcome(profile, card, outcome) -> Profile`. 8 tests in
+`test/deck.test.mjs` (3 scenarios + type collision + 3 outcome tests).
 
-### L-C2 · Flashcard deck UI (tap to flip, Got it / Needs work) 🟢
+### L-C2 · Flashcard deck UI (tap to flip, Got it / Needs work) 🟢 ✅
 Done-check: streak clears flag after 2 consecutive "Got it"; "Needs work"
 re-flags and resets streak.
+`src/components/Practice.tsx` — builds deck on mount, one card per screen,
+tap to flip (shows hint), "Got it" / "Needs work" at bottom. Empty state and
+completion summary included.
 
-### L-C3 · Mastery grid + progress view UI 🟢
+### L-C3 · Mastery grid + progress view UI 🟢 ✅
 Input: H-C1.
 Done-check: grid matches data.
+`src/components/MasteryGrid.tsx` — color-coded grid (green/yellow/gray) of
+introduced sounds. Integrated into Dashboard.
 
 ---
 

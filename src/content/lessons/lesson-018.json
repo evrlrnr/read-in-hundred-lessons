@@ -1,0 +1,76 @@
+{
+  "lesson": 18,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "sh",
+        "r",
+        "c",
+        "g",
+        "o",
+        "t",
+        "i"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "rot",
+        "cash",
+        "rock",
+        "shot"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "cap",
+        "cod",
+        "cop",
+        "cot",
+        "dip",
+        "dot",
+        "gag",
+        "gap"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "ship",
+          "can",
+          "spin",
+          "in",
+          "a",
+          "pot"
+        ],
+        [
+          "a",
+          "cat",
+          "ran",
+          "to",
+          "a",
+          "ship"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What can the ship do in the pot? Who ran to the ship?"
+      ]
+    }
+  ]
+}

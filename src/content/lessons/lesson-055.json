@@ -1,0 +1,83 @@
+{
+  "lesson": 55,
+  "newSoundIds": [
+    "ī"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "ī",
+      "script": [
+        "Point to the sound.",
+        "This sound is eye. The line on top means it says its name. Say it with me: eye.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ī",
+        "ch",
+        "x",
+        "qu",
+        "z",
+        "y"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "bite",
+        "pike",
+        "time"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "dice",
+        "five",
+        "hive",
+        "bun",
+        "cut",
+        "day"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "i",
+          "like",
+          "this",
+          "nice",
+          "kite"
+        ],
+        [
+          "a",
+          "kid",
+          "can",
+          "ride",
+          "up",
+          "a",
+          "fine",
+          "line"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What does Sam like? Where can the kid ride?"
+      ]
+    }
+  ]
+}

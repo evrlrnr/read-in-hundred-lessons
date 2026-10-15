@@ -1,0 +1,83 @@
+{
+  "lesson": 67,
+  "newSoundIds": [
+    "wh"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "wh",
+      "script": [
+        "Point to the sound.",
+        "These two letters make one sound: wh. Say it with me: wh.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "wh",
+        "oy",
+        "ū",
+        "ng",
+        "oo",
+        "er"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "whet",
+        "whim",
+        "whit"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "wham",
+        "whap",
+        "whop",
+        "coy",
+        "web",
+        "win"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "whale",
+          "can",
+          "whip",
+          "a",
+          "wet",
+          "wig"
+        ],
+        [
+          "a",
+          "wind",
+          "hit",
+          "a",
+          "big",
+          "tent"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What can the whale whip? What hit the big tent?"
+      ]
+    }
+  ]
+}

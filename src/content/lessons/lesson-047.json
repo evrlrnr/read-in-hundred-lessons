@@ -1,0 +1,84 @@
+{
+  "lesson": 47,
+  "newSoundIds": [
+    "z"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "z",
+      "script": [
+        "Point to the sound.",
+        "This sound is zzz. Say it with me: zzz.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "z",
+        "y",
+        "ā",
+        "v",
+        "j",
+        "ō"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "zed",
+        "zen",
+        "day"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "zag",
+        "zig",
+        "zap",
+        "say",
+        "way",
+        "hint"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "pup",
+          "can",
+          "zip",
+          "up",
+          "a",
+          "vest"
+        ],
+        [
+          "a",
+          "bug",
+          "can",
+          "zip",
+          "up",
+          "a",
+          "tent"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What can the pup zip up? What can the bug zip up?"
+      ]
+    }
+  ]
+}

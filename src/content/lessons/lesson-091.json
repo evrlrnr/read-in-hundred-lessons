@@ -1,0 +1,88 @@
+{
+  "lesson": 91,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ī",
+        "er",
+        "oo",
+        "ng",
+        "s",
+        "t",
+        "p",
+        "n"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "bee",
+        "look",
+        "toy",
+        "harm"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!",
+        "These have teams — point to the team and say the sound."
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "ditch",
+        "site",
+        "wide",
+        "her",
+        "hook",
+        "boom",
+        "tang"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast.",
+        "Encourage speed — can they read these words quickly?"
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "boy",
+          "got",
+          "a",
+          "kite",
+          "on",
+          "a",
+          "string"
+        ],
+        [
+          "a",
+          "girl",
+          "can",
+          "ring",
+          "a",
+          "gong"
+        ],
+        [
+          "we",
+          "can",
+          "swing",
+          "and",
+          "sing",
+          "a",
+          "song"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: What did the boy get? What can the girl ring? What can we do together?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "lesson": 54,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ch",
+        "x",
+        "qu",
+        "z",
+        "y",
+        "ā"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "match",
+        "bag",
+        "ban",
+        "bat"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "bed",
+        "bee",
+        "beg",
+        "bet",
+        "bib",
+        "bid",
+        "bin",
+        "bot"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "cat",
+          "can",
+          "chat",
+          "on",
+          "a",
+          "mat"
+        ],
+        [
+          "a",
+          "vet",
+          "had",
+          "a",
+          "chat",
+          "with",
+          "a",
+          "kid"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where can the cat chat? Who did the Vet chat with?"
+      ]
+    }
+  ]
+}

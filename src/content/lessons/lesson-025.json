@@ -1,0 +1,83 @@
+{
+  "lesson": 25,
+  "newSoundIds": [
+    "b"
+  ],
+  "tasks": [
+    {
+      "type": "newSound",
+      "soundId": "b",
+      "script": [
+        "Point to the sound.",
+        "This sound is b. Say it with me: b.",
+        "Your turn. What sound? Good."
+      ]
+    },
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "b",
+        "h",
+        "l",
+        "u",
+        "sh"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "If the child pauses, say it together, then ask again."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "bad",
+        "ban",
+        "beg"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!"
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "bet",
+        "bid",
+        "bot",
+        "lab",
+        "lob",
+        "blast"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast."
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "a",
+          "bug",
+          "bit",
+          "sam",
+          "on",
+          "a",
+          "bed"
+        ],
+        [
+          "a",
+          "big",
+          "hen",
+          "sat",
+          "on",
+          "a",
+          "bun"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Who did the bug bite? What did the big hen sit on?"
+      ]
+    }
+  ]
+}

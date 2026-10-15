@@ -1,0 +1,90 @@
+{
+  "lesson": 80,
+  "newSoundIds": [],
+  "tasks": [
+    {
+      "type": "soundReview",
+      "soundIds": [
+        "ī",
+        "er",
+        "oo",
+        "ng",
+        "s",
+        "t",
+        "p",
+        "n",
+        "d",
+        "e_long"
+      ],
+      "script": [
+        "Point to each sound and ask: What sound?",
+        "Go back to any sound the child misses and do it twice more."
+      ]
+    },
+    {
+      "type": "blend",
+      "wordIds": [
+        "beet",
+        "cook",
+        "toy",
+        "tar"
+      ],
+      "script": [
+        "Say it slowly with me... now say it fast!",
+        "These have teams — point to the team and say the sound."
+      ]
+    },
+    {
+      "type": "wordRead",
+      "wordIds": [
+        "zip",
+        "quit",
+        "fox",
+        "wax",
+        "chug",
+        "lunch",
+        "nine",
+        "dice",
+        "per",
+        "her"
+      ],
+      "script": [
+        "Have the child sound out each word, then read it fast.",
+        "Encourage speed — can they read these words quickly?"
+      ]
+    },
+    {
+      "type": "sentenceRead",
+      "text": [
+        [
+          "sun",
+          "set",
+          "in",
+          "a",
+          "mist"
+        ],
+        [
+          "a",
+          "frog",
+          "sat",
+          "on",
+          "a",
+          "limb"
+        ],
+        [
+          "a",
+          "bug",
+          "bit",
+          "me",
+          "on",
+          "a",
+          "leg"
+        ]
+      ],
+      "script": [
+        "Child reads each sentence out loud. If they stumble, sound it out together, then read it once more.",
+        "Ask: Where did the sun set? Where did the frog sit? Where did the bug bite?"
+      ]
+    }
+  ]
+}
